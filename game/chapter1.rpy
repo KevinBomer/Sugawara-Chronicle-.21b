@@ -20,17 +20,9 @@ label chapter1:
 #introduction
     scene sky with dissolve
 
-    Hiroya "Ah-!"
+    "I raise my hand to my cheek. The spot still aches, a reminder of the spat I had with my old man."
 
-    Hiroya "Oh..."
-
-    Hiroya "It was just a dream."
-
-    "I raise my hand to my cheek. The spot tingles as if it's not sure whether or not it should be signaling pain."
-
-    "I hate dreams like that. They feel too real, and they trick my gullible brain into reliving old memories."
-
-    "That dream's more than a figment of my imagination. It's a reminder of the spat I had with my old man."
+    "A reminder of how I ended up here."
 
     Hiroya "Haaahn..."
 
@@ -38,49 +30,53 @@ label chapter1:
 
     scene bridge below day with Dissolve(.5)
 
-    "Yup. That's more or less how I ended up here."
+    "That's more or less how I ended up here."
 
     "Living under a damn bridge."
 
-    "I didn't think to bring much with me. Just my school bag, really."
+    "I didn't have a chance to bring much with me. Just my school bag, really."
 
     "I would have liked to have grabbed some stuff from my room at least. A set of clothes, my sleeping bag."
 
     "Well, at any rate, it's too late for that now."
 
-    "There's no way I can go back and look that smug bastard in the eye."
+    "There's no way I can go back and face that bastard."
 
     "Not that I'd ever want to anyway."
 
-    "That asshole."
+    "I bet he' still smug about that sucker punch."
 
-    "Whatever. I'll manage."
+    "That pig."
 
-    "I'm a junior. I'm basically an adult."
+    "Whatever. I'll manage. I'm a junior after all."
+
+    "I'm basically an adult."
 
     "And this spot isn't too bad. The grass is cool and the autumn breeze is at just the right temperature as it comes in over the water."
 
-    "I glance down at the school uniform I'm still wearing from last night. It's in pretty rough shape from having been slept in, and on the ground, no less."
+    "I'm still wearing my school uniform from last night. It's in pretty rough shape from having been slept in, and on the ground, no less."
+
+    "Well, I guess it won't be the first time I go to class looking like this."
 
     "Oh crap, what time is it?"
 
+    "If I'm late for homeroom again, Miss Hirayama really might send me to the disciplinary councelor."
+
+    "A phone call to my dad from the schoool is the last thing I need right now."
+
     "I make a cursory glance to my watch."
 
-    "If I'm late for homeroom again, Miss Hirayama will have my hide!"
+    "Class hasn't started yet. If I book it, I might just make it before the bell."
 
-    "A disciplinary call to my dad is the last thing I need right now."
-
-    "Hmm."
-
-    "Class hasn't started yet. The school is still a decent way up the road from here, but if I book it, I might just make it before the bell."
-
-    scene bridge sidewalk day with wiperight
+    "The school is still a decent way up the road from here."
 
     "With no time to lose, I start my run."
 
-    "I try to start off with a quick and steady pace, controlling my breathing like how they teach us to while running track."
+    scene bridge sidewalk day with wiperight
 
-    "I'm not exactly in the best shape, but I do have one thing going for me."
+    "I try to start off with a quick and steady pace and focus on my breathing. A technique I learned from track and field."
+
+    "I'm not exactly in peak condition, all things considered, but I do have one thing going for me."
 
     "This is my town. I've lived here all my life."
 
@@ -175,19 +171,18 @@ label chapter1:
             pause (3.2)
             linear .5 xzoom 1.0
     pause (3.2)
-    scene white with hpunch
-    "Oh, wait, that's me."
     play sound "sfx/heavy_bag_drop_dirt2.ogg"
+    scene white with hpunch
 
-    "I crash onto my back, my head turned skyward towards the blinding light."
+    "Oh, wait, that's me."
 
-    "I wince at the bright morning sun."
-
-    "My whole body fills with pain. Right down to my very soul."
+    "That definitely cost me some hit points."
 
     "???" "Are you still breathing?"
 
     Hiroya "Hn..n."
+
+    "My whole body fills with pain. Right down to my very soul."
 
     scene CG kaori crash with Dissolve (3.0)
 
@@ -209,8 +204,6 @@ label chapter1:
 
     Hiroya "You animal! How can you kick me like that?"
 
-    Hiroya "That definitely cost me some hit points."
-
     show Kaori u shout p1:
         subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
         parallel:
@@ -220,7 +213,6 @@ label chapter1:
             easein 0.1 ypos 1.3
 
     Kaori shout "Well {i}excuse me{/i} for acting in self-defence!"
-
     show Kaori frustrated with Dissolve(.25)
 
     Kaori "If anything, you should be apologizing for scaring me like that."
@@ -263,11 +255,11 @@ label chapter1:
 
     Kaori confused "Tachibana?"
 
-    "That figures."
+    "That figures. It's my first semester here, after moving in with the pig."
 
-    "There's no way she'd recognize a relative nobody like me."
+    "Can't expect her to know everyone."
 
-    "She seems oddly suspicious of me for some reason."
+    "Still, she seems oddly suspicious of me for some reason."
 
     Kaori shout "Why were you running like that anyway?"
 
@@ -281,7 +273,13 @@ label chapter1:
 
     Kaori frustrated p1 "That uniform represents a lot of history. I would expect a Sugawara student to show a little more pride."
 
-    Hiroya "I don't know. I had a busy morning. Cut me some slack, alrght? I need to go to class now. Hirayama-sensei isn't known for leniency."
+    Hiroya "I don't know. I had a busy morning."
+
+    Hiroya "It's not like you're wearing yours properly either. Cut me some slack, alrght?"
+
+    Kaori cool "I always look like this."
+
+    Hiroya "I need to go to class now. Ms. Hirayama isn't known for leniency."
 
     Kaori shocked "Hey, hold on just a minute!"
 
@@ -293,15 +291,15 @@ label chapter1:
 
     Hiroya "I’m not in any clubs, no."
 
-    Kaori p2 frustrated"I didn't think so. I try to visit each of them regularly. I've never seen you at a meeting."
+    Kaori p2 frustrated "I didn't think so. I didn't see you at the summer festival either."
 
-    Hiroya "Look, I'm just not much of a club person. I have a lot of stuff to deal with and I don't need the extra hassle."
+    Hiroya "Look, I'm just not really much of a club person. I just moved here, and I'm dealing with a lot of stuff. I don't need the extra hassle."
 
-    Kaori shout "That’s unacceptable! Every student should join a club."
-
-    Kaori shocked "It builds character! And relationships that serve as the foundation for a responsible student life!"
+    Kaori shout "That’s unacceptable. Every student should join a club."
 
     "Jeez, this girl."
+
+    Kaori shocked "It builds character! And relationships that serve as the foundation for a responsible student life!"
 
     Kaori p1 cool "Consider this an order from your student council president! You {i}will{/i} join a school club while you are a student at Sugawara!"
 
@@ -325,7 +323,7 @@ label chapter1:
 
     Kaori shocked "Huh? Is that how I come across to you?"
 
-    Kaori sad2 "Coming from you, someone I just met...that's -"
+    Kaori sad2 "That's not- I didn't mean to..."
 
     "This girl."
 
@@ -377,13 +375,13 @@ label chapter1:
     "When I get inside, I go straight upstairs to the classroom."
     play sound "sfx/door_open.ogg"
 
-    "When I get to the door I peek through the window, contemplating wether or not it would be possible to sneak in without Hirayama-sensei noticing."
+    "When I get to the door I peek through the window, hoping for an opportunity to sneak in without Ms. Hirayama noticing."
 
     "Huh? That's strange."
 
-    "Inside I see my fellow classmates chatting away, wandering around the classroom. Not doing anything in particular."
-
     "I double check the time on my phone. Class definitely should have started by now."
+
+    "So why isn't the teacher inside? She defenitely should have been here by now."
 
     "Guess I'll go inside and see what's going on."
     play sound "sfx/door_close.ogg"
@@ -431,9 +429,11 @@ label chapter1:
 
     "This weird girl is Akari Miyazaki. She sits next to me in homeroom."
 
-    "Actually, she's been sitting next to me since middle school. I guess we've sort of grown up together, if I think about it."
+    "Actually, before she moved, she sat next to me in middle school too. I guess we sort of grown up together, if I think about it."
 
-    "She's always been nice enough to me, and I've got nothing against her or anything but..."
+    "We weren't great friends or anything, but when she discovered I'd be in her class, she sort of latched on."
+
+    "Akari's always been nice enough to me, and I've got nothing against her or anything but-"
 
     Hiroya "Akari..."
 
@@ -443,7 +443,7 @@ label chapter1:
 
     Akari "There's no way it would fit!"
 
-    "...but she's got this bad habit of causing public disturbances."
+    "-but she's got this bad habit of creating public disturbances."
 
     "Usually completely obliviously."
 
@@ -463,7 +463,7 @@ label chapter1:
 
     scene CG Akari fruit questioning with Dissolve(.25)
 
-    Akari "Well you got lucky this time. Hirayama-sensei is late too!"
+    Akari "Well you got lucky this time. Ms. Hirayama is late too!"
 
     Hiroya "So that's why class hasn't started."
 
@@ -480,7 +480,7 @@ label chapter1:
     menu:
         "Ask about your teacher.":
             scene classroom with dissolve
-            Hiroya "It’s not like Hirayama-sensei to miss class without any sort of explanation."
+            Hiroya "It’s not like Ms. Hirayama to miss class without any sort of explanation."
             show Akari p2 nervous u at center with dissolve:
                 xflip
             Akari "I hope everything is okay. Someone should go and talk to the principal."
@@ -547,7 +547,7 @@ label chapter1:
                         "A moment later, the door slides open."
                         "???" "Please take a seat, everyone."
                         hide Akari with dissolve
-                        "Ah, Hirayama-sensei showed up."
+                        "Ah, Ms. Hirayama showed up."
                         Hirayama "Sorry for the delay, everyone, but break time is over. We have lots to go over today!"
                         "It's the teacher."
                         Hiroya "There she is. I wonder why she was late."
@@ -609,7 +609,7 @@ label chapter1:
                         "Akari on the other hand seems to be struggling to keep up."
                         Hirayama "Tachibana-san! I said class is starting!"
                         "She must have noticed the way I was leaning out of my desk. I scoot away and turn towards the window."
-                        "Hirayama-sensei comes towards my desk, and then turns towards Akari."
+                        "Ms. Hirayama comes towards my desk, and then turns towards Akari."
                         Hirayama "What... is this?"
                         play sound "sfx/tablewipe.ogg"
                         "She wipes her finger across the sticky sweet puddle left behind by the fruit."
@@ -636,7 +636,7 @@ label chapter1:
             Hiroya "Akari, I know our homeroom teacher hasn’t shown up today, but she could still walk in at any moment. You know?"
             scene CG Akari fruit annoyed with dissolve
             Akari "What’s your point?"
-            Hiroya "If Hirayama-sensei walks in with that mess on your desk, she’s going to be very angry."
+            Hiroya "If Ms. Hirayama walks in with that mess on your desk, she’s going to be very angry."
             scene CG Akari fruit questioning with dissolve
             Akari "Hmm."
             "She’s thinking about it."
@@ -683,13 +683,14 @@ label chapter1:
                 xflip
                 ypos 1.0
                 bounce
-            Akari "Hey, don't eat them all. Or the panda will lose body parts!"
+            Akari "H-Hey, slow down! The panda's losing body parts!"
             "I ignore her. I can't help it."
             "The fruit is wonderful."
-            Akari frown "Hey. Hey!"
+            Akari frown "Wait!"
             "And then it was gone."
             Hiroya "Sorry, Akari."
-            Akari nervous "Aww you ate them all! How could you!?"
+            Akari nervous "Aww."
+            Akari "You ate them all."
             Hiroya "I'm sorry..."
             Hiroya "But your panda was really delicious. So thanks."
             Akari sad "You are completely hopeless, Hiroya."
@@ -698,7 +699,7 @@ label chapter1:
             "The door slides open."
             "???" "Please take a seat, everyone."
             hide Akari with dissolve
-            "Ah, Hirayama-sensei showed up."
+            "Ah, Ms. Hirayama showed up."
             Hirayama "Sorry for the delay, everyone, but break time is over. We have lots to go over today!"
             "It's the teacher."
             Hiroya "There she is. I wonder why she was late."
@@ -714,7 +715,7 @@ label chapter1:
             scene black with fade
 
     scene classroom empty with fade
-    "Well, now that Hirayama-sensei is back, the classes are back to the norm."
+    "Well, now that Ms. Hirayama is back, the classes are back to the norm."
     "Math, English, Literature, the usual subjects."
     "On any other day, classes like these would be a breeze..."
     "...But I was kicked out last night."
@@ -737,7 +738,7 @@ label chapter1:
     play sound "sfx/sms.ogg"
     "*Bzzt*"
     "My phone buzzes."
-    "\"So since sensei is back and we can’t talk during class...\""
+    "\"So since the teacher is back and we can’t talk during class...\""
     play sound "sfx/sms.ogg"
     "*Bzzt*"
     "Damnit Akari."
@@ -765,8 +766,9 @@ label chapter1:
     scene hallway 1 empty with wiperight
     pause (2.0)
     play sound "sfx/door_close.ogg"
+
+
     #Suzuki introduction scene
-    play music Suzukitheme fadein (5.0)
     scene hallway 2 with wipeleft
     "When the lesson ends, I leave the classroom and head downstairs. Akari walks with me until we arrive in the common room for our break period."
     queue sound "sfx/tstep_tile1.ogg"
@@ -776,27 +778,25 @@ label chapter1:
     Hiroya "Right, I hope she can come."
     hide Akari with dissolve
     "I Guess I’ll hit up the vending machine and get my usual bean bun and green tea."
-    "Wow, it's 400 yen."
     "I never realized how expensive this was."
-    "If I keep buying these for lunch, I'll run out of money in no time!"
-    "Nope, I have to stop that train of thought."
+    "If I keep buying these for lunch, I'll be out of money in no time."
+    "Nope, I can't allow myself to think that way."
     Hiroya "I’m going to get a job!"
     play sound "sfx/coindeposit.ogg"
     queue sound "sfx/vending.ogg"
     "I put the coins in the machine and take my first real meal of the day."
     "I lean up against the wall in my usual spot when..."
+    play music Suzukitheme
     "*THUMP*" with vpunch
     show Suzuki u p1 tough with dissolve
-    "Hmm...?"
-    "A guy props himself against the wall in front of me. A member of the baseball team if I recall correctly."
+    "Some guy props himself against the wall in front of me."
     BaseballGuy "Hey, Tachibana! You’re pretty tough, right?"
     Hiroya "Hmm? What?"
     "The way he’s looking at me... is he analyzing me?"
     show Suzuki u p1 questioning with dissolve
     BaseballGuy "Hmm."
     play sound "sfx/toon_poke.ogg"
-    Hiroya "Eh!?"
-    Hiroya "Did you just poke my arm?"
+    Hiroya "...Did you just poke my arm?"
     show Suzuki u p1 speaking with dissolve
     BaseballGuy "Yep, just as I thought. I bet you could take on anyone at Sugawara, big guy."
     Hiroya "..."
@@ -835,7 +835,7 @@ label chapter1:
     play sound "sfx/butcherpaper_short.ogg"
     Hiroya "Wait, is that... roast beef?"
     #Show roast beef
-    BaseballGuy "Huh? This?"
+    BaseballGuy "Huh? This? It's just my lunch."
     "He raises it up so I can see."
     "A perfect home-made roast beef sandwich. With cheese."
     play sound "sfx/butcherpaper.ogg"
@@ -857,7 +857,7 @@ label chapter1:
     BaseballGuy "Now listen up, punk! I’m about to fill you in on a top-secret mission."
     Hiroya "*sigh* I guess I have no choice."
     show Suzuki u p2 speaking with dissolve
-    BaseballGuy "The name is Suzuki Kisaragi, captain of the baseball team. Star athlete. Recruiting officer. You can get my autograph later."
+    BaseballGuy "The name is Kisaragi Suzuki, captain of the baseball team. Star athlete. Sugawara's superstar. You can get my autograph later."
     hide Suzuki
     Hiroya "Hiroya Tachibana, member of the going home club. Bridge enthusiast. If you ever become famous, expect to see that autograph on Ebay."
     "I take a bite of the sandwich. It's tender. Just right."
@@ -873,12 +873,12 @@ label chapter1:
     hide Suzuki
     scene black with fade
     play music frozendream fadein (2.0)
-    Suzuki "For a while, Sugawara High was famous for its academics and athletics. Students would apply from all over the country to have a chance to graduate from this school."
-    Suzuki "Our sports programs were on national television. Our events would even draw spectators in from other cities, just to see what our clubs would put together."
-    Suzuki "But..."
-    Suzuki "Two years ago, all of that changed."
-    Suzuki "A private school, built by one of this town’s oldest and most influential families, was opened our freshmen year."
-    Suzuki "For the first year, things were about the same as they had always been."
+    Suzuki "For years, our school was famous for its academics and athletics. Students would apply from all over the country just to have a chance at joining our programs."
+    Suzuki "Our club events even made it on national television. Our games drew spectators in from other cities, just to see what our school was capable of."
+    Suzuki "But two years ago all of that changed."
+    Suzuki "A private school, built by one of this town’s oldest and most influential families, opened our freshmen year."
+    Suzuki "Sakuranoki Academy."
+    Suzuki "In the beginning, nothing changed much for us. We had a few less applicants I guess."
     Suzuki "But last year, the unthinkable happened."
     queue sound "sfx/thunderclap.ogg"
     scene CG Shizuka dark with fade
@@ -890,8 +890,9 @@ label chapter1:
     "Endo brought the tech industry to this city. Along with factories, stores, offices, you name it."
     "At least half of the real-estate in this town must be owned by Endo by now."
 
-    Suzuki "Some people think Sakura no-Ki Academy was built just for Shizuka. A castle for a princess. Daddy's little princess got her very own private school to rule over."
-    Suzuki "She's the class president, club director, hell, she's the top student on top of that."
+    Suzuki "Some people think the Academy was built just for Shizuka. A castle for a princess. Daddy's little princess got her very own private school to rule over."
+    Suzuki "She's the class president, director of all the clubs."
+    Suzuki "Hell, she's the top student on top of that."
     Hiroya "That doesn’t sound right. Which people say that? Are you sure your information is good?"
     show Suzuki u p2 shouting:
         xflip
@@ -905,41 +906,40 @@ label chapter1:
         xpos .6
         ypos 50
 
-    Suzuki "Since Shizuka’s rise to power, there’s been a huge drop in attendance to our school’s events, and applications to this school reached an all-time low."
+    Suzuki "Since Shizuka’s rise to power, there’s been a huge drop in attendance to our school’s events, and prospective students reached an all-time low."
     Suzuki frown "More importantly, baseball ticket sales dropped."
     Suzuki tough "We had 16 consecutive wins last year! They should be building statues of us!"
     Suzuki "But our turnouts are lower than they've ever been."
     Suzuki questioning "The only possible explanation for the loss in fan attendance..."
-    Suzuki questioning p2 "Is that Sakura no-Ki baseball club has stolen our spotlight!"
-    Hiroya "Is it possible that you just suck as team captain?"
+    Suzuki questioning p2 "Is that Shizuka's tyranny has stolen our spotlight!"
+    Hiroya "Isn't it possible that you just suck as team captain?"
     show Suzuki shouting p2 at bounce
     Suzuki "No, that's not possible!"
-    Suzuki p1 speaking u "Besides, it was Kaori-chan’s conclusion, not mine!"
+    Suzuki p1 speaking u "Besides, it was Kaori-chan’s conclusion, not mine."
     "Her again?"
-    Suzuki tough "All of it, a dastardly plan by Shizuka Endo to steal the glory from us who've worked for it!"
+    Suzuki tough "All of this is part of a dastardly plan by Shizuka Endo to steal the glory from us who've worked for it!"
     Hiroya "Do you actually believe that?"
     Suzuki speaking "Well of course. After all, baseball is the most exciting thing there is."
     Suzuki questioning "It's the most important club at Sugawara. It's only logical she would strike here first!"
     Hiroya "And that's what Kaori told you."
     Suzuki tough "If Kaori-chan says we can do something about it, I intend to!"
-
     "What a load of crap."
-
     Hiroya "So, what do you want from me?"
     Suzuki speaking "Oh, nothing much."
-    Suzuki happy "Come meet me in the courtyard after school."
+    Suzuki happy "Due to the importance of our mission, it's essential that details of our operations stay under wraps until it's time to strike."
     "He points at the thin paper wrapper in my hand, the one which had once contained something delicious."
-    Suzuki vhappy "I’ll have another one of those for you when you come."
-    "My one true weakness."
-    "With that, we make our way to my class."
-
-    "The students start to take their seats. Hojo-sensei enters through the front entrance."
-    Suzuki tough "I’ll be near the gates. We’ll fill you in on our top-secret strategy once you get there."
-    "Hojo" "Hey you, you're not in this class."
-    Suzuki "See you later, buddy!"
+    Suzuki vhappy "When the time is right, we'll contact you. I'll have a lot more of those waiting when you come."
+    "How did this guy read me so well?"
+    "Mr. Hojo enters through the front entrance. The students start to take their seats."
+    Hiroya "Look, I can't promise anything. If you're working with Kaori-"
+    "Hojo" "-Hey you, you're not in this class."
+    Suzuki tough "Take some time to think it over."
+    Suzuki tough "See you later, buddy!"
     Suzuki "Ciao!"
     hide Suzuki with moveoutright
     "He takes the back exit, in no particular hurry."
+    "I was going to say, that I can see some advantages to working with Kaori. If nothing else, it would give me something to do so I don't have to go home."
+    "{i}home...{/i}"
     "Why is this school so full of weirdos?"
     "Hojo" "*sigh* Let's get started."
     play music SugarMorning fadein (1.0)
@@ -954,9 +954,9 @@ label chapter1:
     "I could do a job like that. Go to work afterschool, clean tables and such."
     "I should go talk to the manager. Maybe I can go when--"
     Akari "Psst."
-    "Damnit, can't I just get 5 minutes to space out during class!?"
+    "Can't I just get 5 minutes to space out during class?"
     "Akari leans out of her desk."
-    Akari "Hey Hiroya..."
+    Akari "Hey, Hiroya."
     "Her best attempt at a whisper."
     "I try to ignore her."
     Akari "Psssssssssst!"
@@ -965,24 +965,24 @@ label chapter1:
     Hiroya "Shush. We’re in class."
     Akari "Hey, so about dinner tonight..."
     "My scolding was completely ineffective."
-    "I suppose that's right. I already told Akari I would go to her house after school."
-    Akari "I was just talking to Miyu-chan. You'll never guess who she was with!"
+    Akari "I was just talking to Peaches. You'll never guess who she was with!"
     Hiroya "Quiet, you. You'll get me in trouble."
     hide Akari
-    Hojo "What was that!?"
-    Akari "Ach!"
-    "Hojo-sensei barks, but doesn't turn away from the board."
+    Hojo "What was that?"
+    Akari "Aah!"
+    "Mr. Hojo barks, but doesn't turn away from the board."
     Hojo "Well, anyway, using what we know about the law of sines..."
     "He returns to the lesson. Akari stares at the teacher's back for a couple seconds, leaning out of her desk to talk again."
     "I try to ignore her again, but she doesn't seem to get the hint."
     Akari "So go on, Guess!"
     Hiroya "I have no idea. Just tell me."
-    Akari "So these two girls. Oh! They’re sisters! Umm, they just transferred in and they’re living with Miyu-chan now. My mom always makes too much food - even though she can only make one thing - but it’s really good!"
+    Akari "So these two girls. Oh! They’re sisters! Umm, they just transferred in and they’re living with Peaches now. My mom always makes too much food - even though she can only make one thing - but it’s really good!"
     "What did I do to deserve this?"
     Akari "And they're coming over tonight! You're going to help me, right?"
     Hiroya "Help? With what? What does this have to do with me?"
+    Hiroya "And who the hell is 'Peaches'?"
     Akari "You should be pleased!"
-    Hiroya "Hey, all I agreed to was free curry. What's this you're trying to drag me into?"
+    Hiroya "I just wanted your mom's free curry. What's this you're trying to drag me into?"
     Akari "Dummy! Don't you want to have dinner with a bunch of cute girls?"
     Akari "This could be a great opportunity for you!"
     Hiroya "What am I? A harem protagonist?"
@@ -999,84 +999,84 @@ label chapter1:
     "\"Back me up on this! Miyu-chan is an introvert! We've got to make sure she becomes friends with her new roommates!\""
     "\"So you’re gonna help me make sure tonight is extra super-duper fun!\""
     "I really do try to understand her reasoning. Sometimes though, she's just in another world."
-    "And I actually do really want that roast beef Suzuki was offering."
     "Akari wasn't lying when she said her mother only knows how to make one dish."
     "But still, it seems like she really wants me to be there."
     "I press the reply button."
-    menu:
-        "Sure, I’ll come over for dinner.":
-            "And sent."
-            $renpy.music.set_volume(0.0, delay=0.2, channel='music')
-            #pause(0.2)
-            play sound "sfx/sms_akari.ogg"
-            pause(1.0)
-            $renpy.music.set_volume(1.0, delay=4.0, channel='music')
-            "* * *"
-            "*Snap*"
-            "The teacher's chalk breaks against the board."
-            Hojo "*sigh*"
-            "He spins around, his face red with anger."
-            "..."
-            Akari "Ehehe..."
-            "..."
-            Hojo "Of course it's you, Miyazaki. Who else could it possibly be!"
-            Akari "Ehehe... Well what can you do? Hehe..."
-            "..."
-            Hojo "Bathroom. Duty."
-            Akari "B... b... huh?"
-            Hojo "BATHROOM DUUUUUUTYYYYYY!"
-            Akari "I’m so sorry!"
-            "Saw that coming."
-            play music Sugawara fadein (1.0)
-            scene black with dissolve
-            scene sky with dissolve
-            "This is how our days usually go."
-            "Me, just trying my hardest to get through the day. Akari can be a bit of a pain sometimes, but she has good enough intentions."
-            "She'll pretend to be upset for awhile, but she'll be fine in the end. She's always been that way. I look over to see how she's doing."
-            "She's trying her best to glare at me, but I can tell she's holding back a huge smile."
-            "You’re not fooling anyone, Akari."
-            "I copy down the homework assignment on the board and try my best to focus for the remainder of the period."
-            "Akari leaves me alone for the rest of the class, but I know that regardless of her detention, she's looking forward to tonight."
-            scene black with fade
-            jump Akari2
+    "\"Yeah, I guess I can come over for dinner.\""
+    "And sent."
+    $renpy.music.set_volume(0.0, delay=0.2, channel='music')
+    #pause(0.2)
+    play sound "sfx/sms_akari.ogg"
+    pause(1.0)
+    $renpy.music.set_volume(1.0, delay=4.0, channel='music')
+    "* * *"
+    "*Snap*"
+    "Mr. Hojo's chalk breaks against the board."
+    Hojo "*sigh*"
+    "He spins around, his face red with anger."
+    "..."
+    Akari "Ehehe..."
+    "..."
+    Hojo "Of course it's you, Miyazaki. Who else could it possibly be!"
+    Akari "Ehehe... Well what can you do? Hehe..."
+    "..."
+    Hojo "Bathroom. Duty."
+    Akari "B... b... huh?"
+    Hojo "BATHROOM DUUUUUUTYYYYYY!"
+    Akari "I’m so sorry!"
+    "Saw that coming."
+    play music Sugawara fadein (1.0)
+    scene black with dissolve
+    scene sky with dissolve
+    "This is how our days usually go."
+    "Me, just trying my hardest to get through the day. Akari can be a bit of a pain sometimes, but she has good enough intentions."
+    "She'll pretend to be upset for awhile, but she'll be fine in the end. She's always been that way. I look over to see how she's doing."
+    "She's trying her best to glare at me, but I can tell she's holding back a huge smile."
+    "You’re not fooling anyone, Akari."
+    "I copy down the homework assignment on the board and try my best to focus for the remainder of the period."
+    "Akari leaves me alone for the rest of the class, but I know that regardless of her detention, she's looking forward to tonight."
+    scene black with fade
+    jump Akari2
 
-        "Sorry, I already made plans for tonight.":
-
-            "Aaaand sent."
-            $renpy.music.set_volume(0.0, delay=0.2, channel='music')
-            #pause(0.2)
-            play sound "sfx/sms_akari.ogg"
-            pause(1.0)
-            $renpy.music.set_volume(1.0, delay=4.0, channel='music')
-            "* * *"
-            "*Snap*"
-            "The teacher's chalk breaks against the board."
-            Hojo "*sigh*"
-            "He spins around, his face red with anger."
-            "..."
-            Akari "Ehehe..."
-            "..."
-            Hojo "Of course it's you, Miyazaki. Who else could it possibly be!"
-            Akari "Ehehe, well what can you do? Hehe..."
-            "..."
-            Hojo "Bathroom. Duty."
-            Akari "B-B... huh?"
-            Hojo "BATHROOM DUUUUUUTYYYYYY!"
-            Akari "I’m so sorry!"
-            "Saw that coming."
-            play music Sugawara fadein (1.0)
-            scene black with fade
-            scene sky with dissolve
-            "This is how our days usually go."
-            "Me, trying my hardest to study, Akari being a bit of a pain, but with good enough intentions."
-            "It's not like it's really a big deal anyway. Akari and I can hang out whenever."
-            "But I'm actually curious to see just what Suzuki and the president actually have in mind."
-            "And they're actually willing to pay me. Even if it's just in food."
-            "Still, I can't help but feel a little bit bad for Akari."
-            "I look over to see how she's doing."
-            "She's facing away from me, with her head down on her desk. Somehow I don't think it's her detention that's bothering her."
-            "I'm sure she's read my text by now."
-            "I copy down the homework assignment on the board and do my best to ignore her for the remainder of the period."
-            "She doesn't try to whisper to me again."
-            scene black with fade
-            jump Kaori2
+######################################################
+#### Edited out for now, route split is being moved to after the spectre interstitial scene.
+#        "Sorry, I already made plans for tonight.":
+#
+#            "Aaaand sent."
+#            $renpy.music.set_volume(0.0, delay=0.2, channel='music')
+#            #pause(0.2)
+#            play sound "sfx/sms_akari.ogg"
+#            pause(1.0)
+#            $renpy.music.set_volume(1.0, delay=4.0, channel='music')
+#            "* * *"
+#            "*Snap*"
+#            "The teacher's chalk breaks against the board."
+#            Hojo "*sigh*"
+#            "He spins around, his face red with anger."
+#            "..."
+#            Akari "Ehehe..."
+#            Hojo "Of course it's you, Miyazaki. Who else could it possibly be!"
+#            Akari "Ehehe, well what can you do? Hehe..."
+#            "..."
+#            Hojo "Bathroom. Duty."
+#            Akari "B-B... huh?"
+#            Hojo "BATHROOM DUUUUUUTYYYYYY!"
+#            Akari "I’m so sorry!"
+#            "Saw that coming."
+#            play music Sugawara fadein (1.0)
+#            scene black with fade
+#            scene sky with dissolve
+#            "This is how our days usually go."
+#            "Me, trying my hardest to study, Akari being a bit of a pain, but with good enough intentions."
+#            "It's not like it's really a big deal anyway. Akari and I can hang out whenever."
+#            "But I'm actually curious to see just what Suzuki and the president actually have in mind."
+#            "And they're actually willing to pay me. Even if it's just in food."
+#            "Still, I can't help but feel a little bit bad for Akari."
+#            "I look over to see how she's doing."
+#            "She's facing away from me, with her head down on her desk. Somehow I don't think it's her detention that's bothering her."
+#            "I'm sure she's read my text by now."
+#            "I copy down the homework assignment on the board and do my best to ignore her for the remainder of the period."
+#            "She doesn't try to whisper to me again."
+#            scene black with fade
+#            jump Kaori2
+##########################################################

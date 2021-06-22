@@ -28,12 +28,12 @@ init:
 
     ##These are side characters who don't have images. They don't technically need to be defined but it'll auto add quotes this way.
     define Dad = Character("Dad",who_color="#ffffff",what_prefix = '"', what_suffix = '"')
-    define Hojo = Character("Hojo-sensei",who_color ="ffffff", what_prefix = '"' , what_suffix = '"')
-    define Hirayama = Character("Hirayama-sensei",who_color ="ffffff", what_prefix = '"' , what_suffix = '"')
+    define Hojo = Character("Mr. Hojo",who_color ="ffffff", what_prefix = '"' , what_suffix = '"')
+    define Hirayama = Character("Ms. Hirayama",who_color ="ffffff", what_prefix = '"' , what_suffix = '"')
     define Miyazaki = Character("Miyazaki",who_color ="ffffff", what_prefix = '"' , what_suffix = '"')
     define BaseballGuy = Character("Baseball Guy",who_color="#ffffff",what_prefix = '"', what_suffix = '"')
-    define Aoi = Character("Aoi",who_color="#ffffff",what_prefix = '"', what_suffix = '"')
-    define Touma = Character("Touma",who_color="#ffffff",what_prefix = '"', what_suffix = '"')
+    define Maya = Character("Maya",who_color="#ffffff",what_prefix = '"', what_suffix = '"')
+    define Kyousuke = Character("Kyousuke",who_color="#ffffff",what_prefix = '"', what_suffix = '"')
     define Juichi = Character("Juichi",who_color="#ffffff",what_prefix = '"', what_suffix = '"')
     define Tall = Character("The tall one",who_color="#ffffff",what_prefix = '"', what_suffix = '"')
     define Round = Character("The round one",who_color="#ffffff",what_prefix = '"', what_suffix = '"')
@@ -354,6 +354,7 @@ init:
     define audio.Sugawara = "music/SugawaraKS.mp3"
     define audio.Early = "music/early.mp3"
     define audio.Jazz = "music/Jazz.mp3"
+    define audio.Spectre = "music/Spectre.mp3"
     #Background initialization:
     image white = "backgrounds/white.png"
     image chapter screen_1 = "chapter screens/chapter_screen_1.png"
@@ -372,8 +373,8 @@ init:
     image student council = "backgrounds/student council.png"
     image hallway 1 = "backgrounds/hallway 1.png"
     image hallway 1 empty = "backgrounds/hallway 1 empty.png"
-    image hallway 2 = "backgrounds/hallway 2.png"
-    image hallway 2 empty = "backgrounds/hallway 2 empty.png"
+    image hallway 2 = "backgrounds/Hallway 2.png"
+    image hallway 2 empty = "backgrounds/Hallway 2 empty.png"
     image street day = "backgrounds/street day.png"
     image sky night = "backgrounds/sky night.png"
     image sky = "backgrounds/sky.png"
@@ -433,7 +434,7 @@ label splashscreen:
     $ renpy.music.play(config.main_menu_music)
     scene black
     show text "{size=32}{font=font-classic.ttf}{color=#ffffff}SARCHALEN VISUAL MEDIA{/font}"
-    $ renpy.pause(.8, hard = True)
+    $ renpy.pause(.25, hard = True)
     scene white
     show sky night:
         subpixel True xpos 0.4 ypos 1.0 xanchor 0.5 yanchor 1.0 zoom 1.55 rotate None

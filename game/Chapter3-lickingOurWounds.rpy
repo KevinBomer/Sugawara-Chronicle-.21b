@@ -1,14 +1,5 @@
-﻿#Fixed some syntax errors that kept the file from being able to be launched in game.
-#Redid ALL of the conversation syntax for expression changes.
-#Commented outbackgrounds that didn't exist and just put plain black background.
-#Fixed the broken Boolean code.
-#ch3night wasn't declared. So I declared the label where I believe it starts.
-#Did my best with the poses for the last like 200 lines, because there were none.
-#WOLF: Check  ..., ?, ?, !?, !?, !??, !?, .~, ...~, ~, ?~
-
-#this needs to be put in the init for the boolean in this chapter to work properly. I don't know why but it won't work if it isn't declared beforehand.
-init:
-    $ fan = False
+﻿#Declare this in the beginning
+$ fan = False
 
 label Kaori3:
 
@@ -21,7 +12,7 @@ label Kaori3:
         ypos .5
         zoom .8
     $ renpy.pause(1, hard=True)
-    show text "{size=40}{color=#3a47a6}Chapter Three \n{size=64}Licking our Wounds" at chaptertitlespot with Dissolve(1.0)
+    show text "{size=40}{color=#3a47a6}Chapter Five \n{size=64}Licking our Wounds" at chaptertitlespot with Dissolve(1.0)
     $ renpy.pause(3, hard=True)
 
     scene street day with dissolve
@@ -223,7 +214,7 @@ label ordering:
             $ lunch = "liver"
             "I open the menu feverishly to a random page and point at something."
             "Squinting, I point at something."
-            Hiroya "I'll have the, uh... chopped liver, and potatos."
+            Hiroya "I'll have the, uh... chopped liver, and potatoes."
             show Yukiko c curious with dissolve
             show Kaori u wink p2 with dissolve
             "They both look at me like I had stripped down to my underpants."
@@ -310,7 +301,7 @@ label ordered:
     "With a polite bow, she excused herself. Kaori glared at me in response."
     Kaori "What are you doing, fraternizing with the {i}enemy{/i}?"
     Hiroya "It's like I said! She was only trying to be polite."
-    "I turn around in my seat to see Shizuka exiting through the front door again. She disapears out of sight."
+    "I turn around in my seat to see Shizuka exiting through the front door again. She disappears out of sight."
     "Turning back to Kaori, I heave a sigh. Kaori's being a real piece of work."
     Hiroya "I don't know why you have to be a jerk to her."
     Kaori u frustrated p1 "..."
@@ -387,10 +378,10 @@ label ch3Suzuki:
             "Of course..."
         "Ask about Yukiko":
             Hiroya "Who's the waitress, Yukiko?"
-            Suzuki bb speaking p1 "I don't really know much about her myself. She's still pretty new."
+            Suzuki bb speaking p1 "I don't know much about her myself. She's still pretty new."
             Suzuki "She says she's trying to save money for after high school."
             Hiroya "She's young though, right? Is she even in high school?"
-            Suzuki happy "Think she'll be transferring to Sugawara soon, actually. Maybe we'll see more of her."
+            Suzuki happy "Think she'll be transferring to Sugawara soon. Maybe we'll see more of her."
             Suzuki bb vhappy p2 "What, you think she's cute?"
             Hiroya "That isn't it at all! I thought she might've been, like, your sister!"
             Suzuki confident "I bet you got a crush on her because she was nice to you~"
@@ -417,7 +408,7 @@ label ch3Suzuki:
     Yukiko "So I got the salad here for Miss Kaori, aaaand..."
     if lunch == "steak":
         Yukiko c smile eyesclosed "The steak dinner for our resident gourmet~"
-        "Looking down at the plate, I could tell it was expertly grilled. Premium sirloin on a bed of local vegetables and mashed potatos."
+        "Looking down at the plate, I could tell it was expertly grilled. Premium sirloin on a bed of local vegetables and mashed potatoes."
         "This would've been a more pleasant sight to look at, if Kaori wasn't looking across the table at me, with intent to kill."
     if lunch == "liver":
         Yukiko c smile eyesclosed "The, ah, ahem, senior's dinner, with liver and fried onion."
@@ -427,7 +418,7 @@ label ch3Suzuki:
     if lunch == "salad":
         Yukiko c smile eyesclosed "Ah, right, you ordered a salad too! No confusion!"
         Yukiko "Guys don't usually order salads though. Ah well~"
-        "My plate looks almost identical to Kaori's in presentation."
+        "My plate looks almost identical to Kaori's in its presentation."
         "Slices of grilled chicken were arranged in a neat circle on a bed of iceberg lettuce, sliced tomato, carrots and cabbage."
     Yukiko c smile eyesclosed "Enjoy! Call me if there's anything more I can do to help!"
     Kaori u speaking p1 "Thank you. This looks delightful."
@@ -452,7 +443,7 @@ label ch3Night:
         align (0.05, 1.0)
     Suzuki "Woo! Hell of a night, hey guys!?"
     Kaori u cool p1 "..."
-    "Kaori merely huffed a sigh in response. She looked miffed, but at the same time, much too tired to actually act on it."
+    "Kaori merely huffed a sigh in response. She looked miffed, but at the same time, much too tired to act on it."
     Hiroya "I don't know why you're so happy about this, Suzuki. Don't you have to help clean up?"
     Suzuki bb shouting p1 "..."
     show Kaori u wink p2 with dissolve
@@ -484,14 +475,14 @@ label ch3Night:
     "It occurs to me that I didn't bring a lighter. Or materials for a fire."
     "I sigh, rising from my feet. There should be some stuff nearby."
     scene black with dissolve
-    "Wading through the shrubbery by the road, I gather dried grass, some twigs, and a few rocks. I have to do it quickly, because it's certainly not getting any warmer."
+    "Wading through the shrubbery by the road, I gather dried grass, some twigs, and a few rocks. I have to do it quickly because it's certainly not getting any warmer."
     "I never had to start a fire without matches or a lighter. I guess I have to go primitive and bang some rocks together."
     #sfx: rocks scraping/banging
     "{b}KLINK! KLINK!{/b}"
     Hiroya "TV made this look a hundred times easier."
     "I keep at it, getting increasingly irritated, until..."
     #sfx: fire
-    "...Sparks catch the dry grass, and light it up. I make sure the fire catches."
+    "...Sparks catch the dry grass and light it up. I make sure the fire catches."
     Hiroya "Fire. Fire good."
 
     scene bridge sidewalk night with dissolve
@@ -543,14 +534,14 @@ label ch3Night:
     "Kaori Chiba...?"
     Kaori "Such an insufferable egotist! That knowing sneer! Grgh!"
     #sfx throw
-    "She through a rock over the railing at lightning speed."
+    "She threw a rock over the railing at lightning speed."
     Kaori "Why does she have to stick her nose into everything! Hasn't she sabotaged us enough!?"
-    "And then she flung another. She knelt down to pick up a particularly heavy rock."
+    "And then she flung another. She knelt to and lifted a particularly heavy rock."
     Kaori "{i}Huff{/i}... must be easy being Daddy's little princess. She never worked a {i}day in her life-{/i}"
     Hiroya "You, uh, need a hand with that rock?"
     Kaori shout "KYAH!?"
     #sfx rock hitting pavement
-    "She cried out in utter shock, her head swiftly turning to meet my eyes head on. Her mouth robotically opened and closed, trying to get some kind of explanation out."
+    "She cried out in utter shock, her head swiftly turning to meet my eyes head-on. Her mouth robotically opened and closed, trying to get some kind of explanation out."
 
     Kaori "H-H-Hiroya!? What are you {i}doing{/i} out here!? At this hour?"
     Hiroya "Shouldn't I be asking you that? You're the one throwing rockets off the bridge and making a racket."
@@ -592,7 +583,7 @@ label ch3Night:
             Kaori "I doubt I could disfigure it any more than it already is."
             Hiroya "Haha, ouch, Kaori. Harsh."
             Kaori "You could've just hollered or something..."
-            Hiroya "But then I'd strain my tender vocal chords."
+            Hiroya "But then I'd strain my tender vocal cords."
             Kaori "Jeez, you {i}are{/i} delicate. You're not getting scouted for the baseball team."
             "We share a few light laughs, but the air still feels heavy."
         "Join her.":
@@ -611,13 +602,14 @@ label ch3Night:
             "Kaori was so quiet and {i}into it{/i}. She got into this kind of zen."
             "Maybe we bonded a little without having to say a single word. It was hard to say."
     "I relaxed on the railing next to Kaori, looking out onto the horizon."
+    scene CG Kaori Bridge with fade
     "I glance aside to Kaori. She always had this intense, inscrutable look on her face, as if she was willing up the strength to stand down a tidal wave."
     "And knowing her, she'd probably insist that it bow before her first."
-    Kaori u cool p1 "I came out here to unwind, and vent. That's all, really."
+    Kaori u cool p1 "I came out here to unwind, and vent. That's all."
     Hiroya "You come out here often?"
     Kaori u embarrassed p1 "Not too often?"
     "Her response was a little cagey and uncertain. I took it as a 'yes', but opted not to press her any further."
-    "We continued to stare at the moonlit sky. It was oddly serene, like we were in a world all of our own."
+    "We continued to stare at the moonlit sky. It was oddly serene like we were in a world all of our own."
     "Isolated and peaceful. The ambient sounds of traffic and cicadas filled the silences between us."
     Kaori u shout p1 "...Hey, Hiroya."
     "Kaori spoke up to break the silence between us. She glanced over to me with a somber look."

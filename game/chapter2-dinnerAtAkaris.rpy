@@ -19,7 +19,7 @@ label Akari2:
     "Most of them are on their ways to various club activities. Others head straight for the school gates."
 
     "On days like today, Akari and I will usually walk Miyu part of the way home, before splitting off towards our own neighborhood."
-    "Afterwords, Akari and I would hang out for a little while either at my house or at her's across the street."
+    "Afterwords, Akari and I would hang out for a little while either at my place, or her house across the street."
     "Today however, the three of us are heading straight to Akari's after school."
     "Actually I guess it'll be a bit different now, with me being somewhat homeless and all."
     "But at least tonight's dinner is secured, and I wouldn't want to worry Miyu."
@@ -83,21 +83,37 @@ label Akari2:
     show Miyu u nervous with dissolve
     Miyu " Oh y-yes... there were three cards..."
     Hiroya "Well, what did the last one say?"
-    show Miyu u nervous with dissolve
+    show Miyu u speaking with dissolve
+    Miyu "The last card represents your love life..."
+    Hiroya "What, is it \"Death\" or something? Because that really wouldn’t surprise me."
+    Miyu "Thankfully it’s not."
+    show Miyu u happy with dissolve
+    Miyu "It’s a joker."
+    Hiroya "A joker?"
+    show Miyu u happy with dissolve
+    Miyu "It's a wildcard."
+    Miyu u speaking "In this situation, the joker implies your destiny hasn't been clearly defined one way or another."
+    Miyu "Is there really no one you’re interested in?"
+    Hiroya "Things have been hectic. Romance isn’t really my top priority right now."
+    show Miyu u speaking with dissolve
+    Miyu u happy "I see. Well, just remember, your destiny isn’t set in stone. The cards tell one possibility, but the choices you make are what ultimately determine your fate."
+    Hiroya "Yeah, I think I get it."
+    "Sounds like she’s creating a safety net in case her fortune doesn’t come true."
+    show Miyu u happy with dissolve
+    Miyu "Hey, so you're coming to Akari's house tonight?"
     pause(1)
-
-    Akari "HELLOOOOOO, PEACHES!"
+    Akari "PEACHES!"
     show Miyu u upset with dissolve
     Miyu "Ahh!"
     play music Early
     hide Miyu with hpunch
-    "Miyu is cut off as Akari quite literally jumps into the conversation."
-    "Akari gets Miyu into a headlock from behind. The momentum from her jump sends them both crashing into the ground."
+    "Miyu is cut off as Akari jumps into the conversation."
+    "Akari tackles Miyu from behind. The momentum from her jump sends them both crashing into the ground."
     Akari "Hehe, gotcha!"
+    "It would seem Miyu has aquired a new nickname. I probably shouldn't ask."
+    "Akari's got her in a hold, pulling Miyu along with her as she sings."
     Akari "Miyuuu score zeeero, no peeeaches for yooouu!"
-    "She rolls back and forth along the grass, pulling Miyu with her as she sings."
     Miyu "I-I really don't know what you mean by that!"
-    "She squeals, unable to escape the clutches of the wild Akari."
     Hiroya "You guys are weird. Come on."
     hide Miyu
     hide Akari
@@ -105,149 +121,8 @@ label Akari2:
     Miyu "Wait, Hiroya, help me!"
     Akari "You'll never escape me!"
     Hiroya "Byeee-"
-
-    "I start walking towards the school gates when some familiar faces appear around the corner."
-    show Suzuki u questioning p1 at rightoffset with moveinright
-    Suzuki "Hey, big guy!"
-    Hiroya "Ack!"
-    show Kaori u speaking p1 at rightoffset2 with moveinright
-    Kaori "Tachibana-san, Glad you made it."
-    Suzuki u shouting p2 "We've been here waiting forever, you jerk!" with dissolve
-    Hiroya "What do you mean!? I was in class."
-    show Kaori concerned with dissolve
-    Kaori "Suzuki, shush. It's no big deal. Come on, the others are waiting."
-    Akari "Huh? Others?"
-    show Akari u speaking p2 at leftoffset with moveinleft
-    "Akari appears from behind me."
-    show Akari u questioning p2 at leftoffset with dissolve
-    Akari "Hiroya, what's going on? Who are these guys?"
-    Hiroya "Oh, well..."
-    Suzuki u confident p2 "Alright Hiroya. I hope you're ready for this. I'm gonna make you an offer you {i}can't refuse!{/i}"
-    Hiroya "Ohhh, we'll see about that."
-    show Suzuki u happy p2
-    Suzuki "Awright, get a load of this!"
-    Suzuki u vhappy p2 "Da da da daaaaa! A free ticket to the baseball game this afternoon~"
-    Hiroya "What."
-    Hiroya "I don't get it. The baseball game? Where's my sandwich?"
-    show Akari u questioning p2 at leftoffset with dissolve
-    Akari "What!?"
-    Akari "Hiroya, you promised you'd come over for Mom's curry tonight!"
-    show Miyu u speaking behind Akari at leftoffset2 with moveinleft
-    Miyu "Calm down, Ri-chan. Let's see what this is about."
-    Suzuki u confident p1 "Come on dude, this is way better than some curry! This is baseball we're talking about here! Real baseball!"
-    show Akari u frown p3 with dissolve
-    "She goes looks over at Suzuki, pouting."
-    Akari "Who exactly are you, anyway?"
-    "She's trying not to be confrontational, but she clearly feals threatened."
-    "I can't help but notice that she's a head shorter than Suzuki."
-    show Suzuki u shouting p2 with dissolve
-    Suzuki "Who am I? Who am I!?"
-    show Suzuki u speaking p1 with dissolve
-    Suzuki "Wait, who are you? Hiroya, this kid isn't coming with us..."
-    show Suzuki u tough p1 with dissolve
-    Suzuki "A tiny first-year like her won't help much."
-    show Akari u frown p3 with dissolve
-    Akari "Hey, I'm a second-year!"
-    Akari "And Hiroya's coming over for dinner."
-    show Suzuki u speaking p2 with dissolve
-    Suzuki "Ahh, I see. So you got him with food."
-    show Akari u happy p1 with dissolve
-    Akari "I got him with friendship!"
-    show Suzuki u tough p1 with dissolve
-    Suzuki "Riiiight."
-    show Akari u frown p1 with dissolve
-    Akari "And you..."
-    "She pokes him in the chest."
-    Akari "You... you... Hiroyaaaaa!"
-    Hiroya "Yeah... actually, there is that. We all agreed to have dinner at her house tonight."
-    show Akari u questioning p1 with dissolve
-    Akari "You were supposed to agree with the friendship part!"
-    show Miyu u nervous at leftoffset2 behind Akari with dissolve
-    Miyu "What's all this about?"
-    Kaori "Oh Miyu, do you know these guys?"
-    show Akari u speaking p2 with dissolve
-    Akari "No, Mii-chan! Stay back!"
-    show Akari u frown p3 with dissolve
-    Akari "They're friend-thieves!"
-    show Kaori u embarrassed p1 with dissolve
-    show Suzuki u shouting p2 with dissolve
-    Kaori "Friend-thieves?"
-    "She actually appears distressed."
-    Akari "They'll bribe you with food and whisk you away, never to be seen again!"
-    show Suzuki u tough p1 with dissolve
-    Suzuki "We are not!"
-    show Kaori u cool p1 with dissolve
-    show Kaori u speaking p2 with dissolve
-    Akari "Are too! You're a friendless nobody who wants to steal Hiroya! Probably Peaches, too!"
-    show Suzuki u shouting p2 with dissolve
-    Suzuki "A friendless nobody?"
-    "He doesn't even ask who or what Peaches is."
-    show Suzuki u frown p1 with dissolve
-    Suzuki "I'll have you know that I'm Kisaragi Suzuki, star athlete. Captain of-.."
-    Kaori u frustrated p2 "Enough! This is pointless." with dissolve
-    hide Kaori with dissolve
-    Kaori "I'll see you at the student council tomorrow, Miyu. Let's go, Suzuki."
-    Suzuki u tough p1 "...I'm not a friendless nobody."
-    hide Suzuki with moveoutright
-    "She grabs him by the collar and pulls him away."
-    Kaori "It's clear that he's busy tonight. We can't force him to do anything."
-    "Kaori looks at me, still gripping Suzuki's collar."
-    show Akari u questioning p1 with dissolve
-    Kaori "Let me know if you change your mind. Sorry to bother you and your friends."
-    "The two of them leave us standing at the gates."
-    show Akari u frown p1 with dissolve
-    Akari "Hmff!"
-    Miyu "Hiroya, do you know those two?"
-    show Akari u questioning p2 with dissolve
-    Akari "Yeah Hiroya! Who was that jerk!?"
-    menu:
-        "The star athlete of our baseball team; the one and only Kisaragi Suzuki.":
-            show Akari u speaking p2 with dissolve
-            Akari "Whaaat?"
-            show Akari u frown p1 with dissolve
-            Akari "Sounds lame."
-            Akari "..."
-            show Akari u frown p1 with dissolve
-            Akari "He's not gonna replace me, right?"
-            Hiroya "Who, Suzuki? Well... I don't know, he just might."
-            show Akari u frown p3 with dissolve
-            Akari "Nooo! Hiroya, you wouldn't!"
-            show Miyu u speaking with dissolve
-            Miyu "Ri-chan... if Hiroya hasn't replaced you in all the years you've known him..."
-            show Miyu u happy with dissolve
-            Miyu "...he's probably not going to."
-            show Akari u questioning p2 with dissolve
-            Akari "Well... I guess you've got a point there."
-            Hiroya "Pfft. Of course I wouldn't replace you."
-            show Akari u vhappy p3 with dissolve
-            Akari "R-really?"
-            "She suddenly seems even happier than usual, which I didn't know was possible."
-            Akari "That's so nice of-"
-            Hiroya "After all, no one could possibly hope to be nearly as weird as you."
-            show Akari u frown p2 with dissolve
-            Akari "Rude!"
-        "Just some guy I ran into today; nobody important.":
-            show Akari u confident p3 with dissolve
-            Akari "Is he bothering you? Do I need to beat him up?"
-            show Miyu u speaking with dissolve
-            Miyu "Ri-chan, I think you're overreacting."
-            show Miyu u concentrating with dissolve
-            Miyu "...But {i}is{/i} he bothering you? He was with Kaori."
-            Miyu "I'm sure I can get her to... dissuade him from pestering you."
-            Hiroya "What? No! You guys are scary. And Miyu, don't abuse your political power."
-            show Miyu u happy with dissolve
-            Miyu "What good is being the student body vice-president if I can't protect my friend?"
-            Hiroya "That's really not the purpose of the role."
-            Miyu "Relax, I was just kidding!"
-            show Miyu u concentrating with dissolve
-            "She doesn't look like she was kidding."
-            show Akari u questioning p1 with dissolve
-            Akari "...So I have permission to beat him up?"
-            Hiroya "Amusing as it would be to watch, I'd prefer it if you didn't."
-            show Akari u frown p1 with dissolve
-            Akari "Boring!"
     "We take off in the direction of Akari's house."
-    scene street day with dissolve
+    scene street day with squares
     show Miyu u happy with dissolve:
         xpos .55
         ypos 163
@@ -315,23 +190,12 @@ label Akari2:
             Hiroya "Hey, why is it cheaper for her?"
             Miyu "I have no idea what you're talking about."
             Hiroya "Remind me why I talk to you guys again?"
-            show Akari u confident p3 with dissolve
-            Akari "Because that Poozuki is your only alternative!"
-            Hiroya "Wow. Can't argue with that."
-            Hiroya "But you know his name is-"
-            show Akari u confident p2 with dissolve
-            Akari "Poozuki."
-            Hiroya "...Alright, sure."
-            "Poor Poozuki."
             show Miyu u speaking with dissolve
             Miyu "Hey, we're just about there."
             show Akari u confident p3 with dissolve
             Akari "Onwards!"
 
-
     scene black with fade
-
-
     "Akari seems to remember something as we approach the door."
     show Akari u speaking p1 with dissolve
 
@@ -382,7 +246,7 @@ label Akari2:
         bounce
     Akari "Hiroya! Miyu! Meet Uroko!"
     "Uroko" "Meooow."
-    "The cat struggled to escape, clearly not pleased with being held."
+    "The cat struggles to escape, clearly not pleased with being held."
     Miyu u happy "So Uroko is a cat?"
     "I had thought it might be a transfer student, but I guess I was a bit off."
     Akari questioning "Well, duh! What else would he be?"
@@ -545,27 +409,25 @@ label Akari2:
     "When I come back, Akari is doing the dishes, Yukiko has gone to play with Uroko, and Miyu is still sitting at the kotatsu."
     menu:
         "Go help Akari with the dishes.":
-            "There's a failry large pile of dishes, more than what would have come from our meal."
+            "I step into the kitchen."
+            "Akari is standing at the sink near a tall stack of dishes, more than what would have come from our meal."
             show Akari c happy with dissolve
             Akari "Mom's been working a lot lately, so she hasn't had time to take care of all these."
             Akari "Why don't you go see what Miyu and Yukiko are up to while I finish up here?"
             Hiroya "Nah, I'll help you out."
+            hide Akari with dissolve
             "She has a double sink with one faucet, so we stand next to each other in silence."
             "Akari turns the faucet to her side of the sink."
             Hiroya "Hey, I was still using that."
-            show Akari c speaking with dissolve
             Akari "But I need it now. I can't clean without the water."
             Hiroya "Just plug the sink and fill it, then you'll have plenty."
             Akari "Then it'll get all gross as I use it!"
             Hiroya "I guess you'll just have to wait your turn, then."
             "I pull the faucet back over to my side."
-            show Akari c frown with dissolve
             Akari "Hiiiiroyaaa!"
             "When she reaches back over for it, I cup my hands under the water and splash her."
-            show Akari c speaking with dissolve
-            "That may have been a poor decision."
-            show Akari c confident with dissolve
-            "Oh no."
+            "She grins."
+            "Oh no. That may have been a poor decision."
             "She grabs the side sprayer and aims it at me."
             Hiroya "Have mercy!"
             Akari "Give me the faucet."
@@ -575,9 +437,9 @@ label Akari2:
             Akari "Ahahaha! I win!"
             show Akari c questioning with dissolve
             "Akari looks me up and down, water dripping down my uniform."
-            Akari "Oh... I may have gone overboard."
+            Akari "I may have gone overboard."
             "I examine my shirt, feeling the water trickle onto my pants."
-            Hiroya "...Maybe a little."
+            Hiroya "Maybe a little."
             show Akari c questioning with dissolve
             Akari "I'll finish up here if you want to go dry off."
             Hiroya "Yeah, okay."
@@ -587,7 +449,7 @@ label Akari2:
             Hiroya "Hmm?"
             show Akari c frown with dissolve
             Akari "Sorry."
-            Hiroya "Pfft, don't worry about it."
+            Hiroya "Don't worry about it."
             hide Akari with dissolve
             "I take of the uniform jacket and hang it in the bathroom."
 
@@ -623,9 +485,10 @@ label Akari2:
                     Hiroya "Heh, well, I can understand that."
                     show Miyu u happy with dissolve
                     Miyu "Yeah, I guess."
+                    hide Miyu with dissolve
                 "Go see Yukiko.":
                     "As I approach Yukiko, I hear a soft meow."
-                    show Yukiko u curious p2
+                    show Yukiko u curious p2 with dissolve
                     Yukiko "Aww, kitty, come back..."
                     "Uroko trots past my legs, away from Yukiko."
                     show Yukiko u pout with dissolve
@@ -652,7 +515,8 @@ label Akari2:
                     show Yukiko u speaking surprised with dissolve
                     Yukiko "Hey, why are you all wet? What happened?"
                     Hiroya "Akari. Akari happened."
-            show Miyu u speaking at rightoffset
+                    hide Yukiko with dissolve
+            show Miyu u speaking at rightoffset with dissolve
             Miyu "Hey Yukiko, we should get going soon."
             show Yukiko u curious p2 at leftoffset
             Yukiko "Already?"
@@ -669,11 +533,12 @@ label Akari2:
             hide Akari
             hide Yukiko
             hide Miyu
+            with dissolve
             "As I leave, I'm stopped."
             show Akari c speaking
             Akari "Um! Hiroya."
             show Akari c vhappy with dissolve
-            Akari "Thanks for helping me out with the dishes!"
+            Akari "Thanks for helping me out with the dishes."
             Hiroya "Yeah, of course. It was fun, until I got soaked."
             show Akari c happy with dissolve
             Akari "Sorry about that."
@@ -974,17 +839,164 @@ label Akari2:
             play music izumitheme fadein 1.0
             "I leave ahead of Miyu and Yukiko, just in case they see where I'm headed."
             "It's unlikely, but I'm a cautious man."
-            "When I get to the bridge, it's empty of people."
-            "Or at least I thought it was."
-            "As I come closer, I notice a figure in white standing on the railing of the bridge."
-            "In the darkness, I can't quite make it out."
-            "I stop and look for a moment. I almost call out, But I don't."
-            "After a few seconds, I can't make anything out. It's like it's faded away."
-            "It's like it was never even there."
-            "Part of me wants to think it was my imagination, but I've never hallucinated before."
-            "Though, maybe I'm already asleep. It feels like I'm walking in a dream."
-            "I must have used too much energy after school. I'm so tired."
-            "I climb down the service ladder to my camp below the bridge."
+            "When I come to the bridge, I notice something."
+            "A figure in white, standing on the guardrail, looking out over the water."
+            "In darkness, I can't quite make them out."
+            "I almost call out, but I don't. I'm still trying to avoid drawing attention to myself."
+            "I look around to see if there was anyone else there with us."
+            "And then it was gone. Faded away."
+            "There was no sound, no footsteps..."
+            "...no splash."
+            "Just gone."
+            "Did I imagine it?"
+            "Halucinations. That's a new one."
+            "Maybe I'm already half asleep. The girls must have worn me out."
+            "I climb down the service ladder, and settle into my campsite."
             "Despite the hard ground and lack of any decent bedtime reading material, this isn't so bad."
             scene black with dissolve
             jump Akari3
+
+    ###############################################################################
+    ### This block is no longer needed as "the game plan" now occurs after after "something about a club. Keeping for reference.
+
+
+        # "I start walking towards the school gates when some familiar faces appear around the corner."
+        # show Suzuki u questioning p1 at rightoffset with moveinright
+        # Suzuki "Hey, big guy!"
+        # Hiroya "Ack!"
+        # show Kaori u speaking p1 at rightoffset2 with moveinright
+        # Kaori "Tachibana-san, Glad you made it."
+        # Suzuki u shouting p2 "We've been here waiting forever, you jerk!" with dissolve
+        # Hiroya "What do you mean!? I was in class."
+        # show Kaori concerned with dissolve
+        # Kaori "Suzuki, shush. It's no big deal. Come on, the others are waiting."
+        # Akari "Huh? Others?"
+        # show Akari u speaking p2 at leftoffset with moveinleft
+        # "Akari appears from behind me."
+        # show Akari u questioning p2 at leftoffset with dissolve
+        # Akari "Hiroya, what's going on? Who are these guys?"
+        # Hiroya "Oh, well..."
+        # Suzuki u confident p2 "Alright Hiroya. I hope you're ready for this. I'm gonna make you an offer you {i}can't refuse!{/i}"
+        # Hiroya "Ohhh, we'll see about that."
+        # show Suzuki u happy p2
+        # Suzuki "Awright, get a load of this!"
+        # Suzuki u vhappy p2 "Da da da daaaaa! A free ticket to the baseball game this afternoon~"
+        # Hiroya "What."
+        # Hiroya "I don't get it. The baseball game? Where's my sandwich?"
+        # show Akari u questioning p2 at leftoffset with dissolve
+        # Akari "What!?"
+        # Akari "Hiroya, you promised you'd come over for Mom's curry tonight!"
+        # show Miyu u speaking behind Akari at leftoffset2 with moveinleft
+        # Miyu "Calm down, Ri-chan. Let's see what this is about."
+        # Suzuki u confident p1 "Come on dude, this is way better than some curry! This is baseball we're talking about here! Real baseball!"
+        # show Akari u frown p3 with dissolve
+        # "She goes looks over at Suzuki, pouting."
+        # Akari "Who exactly are you, anyway?"
+        # "She's trying not to be confrontational, but she clearly feals threatened."
+        # "I can't help but notice that she's a head shorter than Suzuki."
+        # show Suzuki u shouting p2 with dissolve
+        # Suzuki "Who am I? Who am I!?"
+        # show Suzuki u speaking p1 with dissolve
+        # Suzuki "Wait, who are you? Hiroya, this kid isn't coming with us..."
+        # show Suzuki u tough p1 with dissolve
+        # Suzuki "A tiny first-year like her won't help much."
+        # show Akari u frown p3 with dissolve
+        # Akari "Hey, I'm a second-year!"
+        # Akari "And Hiroya's coming over for dinner."
+        # show Suzuki u speaking p2 with dissolve
+        # Suzuki "Ahh, I see. So you got him with food."
+        # show Akari u happy p1 with dissolve
+        # Akari "I got him with friendship!"
+        # show Suzuki u tough p1 with dissolve
+        # Suzuki "Riiiight."
+        # show Akari u frown p1 with dissolve
+        # Akari "And you..."
+        # "She pokes him in the chest."
+        # Akari "You... you... Hiroyaaaaa!"
+        # Hiroya "Yeah... actually, there is that. We all agreed to have dinner at her house tonight."
+        # show Akari u questioning p1 with dissolve
+        # Akari "You were supposed to agree with the friendship part!"
+        # show Miyu u nervous at leftoffset2 behind Akari with dissolve
+        # Miyu "What's all this about?"
+        # Kaori "Oh Miyu, do you know these guys?"
+        # show Akari u speaking p2 with dissolve
+        # Akari "No, Mii-chan! Stay back!"
+        # show Akari u frown p3 with dissolve
+        # Akari "They're friend-thieves!"
+        # show Kaori u embarrassed p1 with dissolve
+        # show Suzuki u shouting p2 with dissolve
+        # Kaori "Friend-thieves?"
+        # "She actually appears distressed."
+        # Akari "They'll bribe you with food and whisk you away, never to be seen again!"
+        # show Suzuki u tough p1 with dissolve
+        # Suzuki "We are not!"
+        # show Kaori u cool p1 with dissolve
+        # show Kaori u speaking p2 with dissolve
+        # Akari "Are too! You're a friendless nobody who wants to steal Hiroya! Probably Peaches, too!"
+        # show Suzuki u shouting p2 with dissolve
+        # Suzuki "A friendless nobody?"
+        # "He doesn't even ask who or what Peaches is."
+        # show Suzuki u frown p1 with dissolve
+        # Suzuki "I'll have you know that I'm Kisaragi Suzuki, star athlete. Captain of-.."
+        # Kaori u frustrated p2 "Enough! This is pointless." with dissolve
+        # hide Kaori with dissolve
+        # Kaori "I'll see you at the student council tomorrow, Miyu. Let's go, Suzuki."
+        # Suzuki u tough p1 "...I'm not a friendless nobody."
+        # hide Suzuki with moveoutright
+        # "She grabs him by the collar and pulls him away."
+        # Kaori "It's clear that he's busy tonight. We can't force him to do anything."
+        # "Kaori looks at me, still gripping Suzuki's collar."
+        # show Akari u questioning p1 with dissolve
+        # Kaori "Let me know if you change your mind. Sorry to bother you and your friends."
+        # "The two of them leave us standing at the gates."
+        # show Akari u frown p1 with dissolve
+        # Akari "Hmff!"
+        # Miyu "Hiroya, do you know those two?"
+        # show Akari u questioning p2 with dissolve
+        # Akari "Yeah Hiroya! Who was that jerk!?"
+        # menu:
+        #     "The star athlete of our baseball team; the one and only Kisaragi Suzuki.":
+        #         show Akari u speaking p2 with dissolve
+        #         Akari "Whaaat?"
+        #         show Akari u frown p1 with dissolve
+        #         Akari "Sounds lame."
+        #         Akari "..."
+        #         show Akari u frown p1 with dissolve
+        #         Akari "He's not gonna replace me, right?"
+        #         Hiroya "Who, Suzuki? Well... I don't know, he just might."
+        #         show Akari u frown p3 with dissolve
+        #         Akari "Nooo! Hiroya, you wouldn't!"
+        #         show Miyu u speaking with dissolve
+        #         Miyu "Ri-chan... if Hiroya hasn't replaced you in all the years you've known him..."
+        #         show Miyu u happy with dissolve
+        #         Miyu "...he's probably not going to."
+        #         show Akari u questioning p2 with dissolve
+        #         Akari "Well... I guess you've got a point there."
+        #         Hiroya "Pfft. Of course I wouldn't replace you."
+        #         show Akari u vhappy p3 with dissolve
+        #         Akari "R-really?"
+        #         "She suddenly seems even happier than usual, which I didn't know was possible."
+        #         Akari "That's so nice of-"
+        #         Hiroya "After all, no one could possibly hope to be nearly as weird as you."
+        #         show Akari u frown p2 with dissolve
+        #         Akari "Rude!"
+        #     "Just some guy I ran into today; nobody important.":
+        #         show Akari u confident p3 with dissolve
+        #         Akari "Is he bothering you? Do I need to beat him up?"
+        #         show Miyu u speaking with dissolve
+        #         Miyu "Ri-chan, I think you're overreacting."
+        #         show Miyu u concentrating with dissolve
+        #         Miyu "...But {i}is{/i} he bothering you? He was with Kaori."
+        #         Miyu "I'm sure I can get her to... dissuade him from pestering you."
+        #         Hiroya "What? No! You guys are scary. And Miyu, don't abuse your political power."
+        #         show Miyu u happy with dissolve
+        #         Miyu "What good is being the student body vice-president if I can't protect my friend?"
+        #         Hiroya "That's really not the purpose of the role."
+        #         Miyu "Relax, I was just kidding!"
+        #         show Miyu u concentrating with dissolve
+        #         "She doesn't look like she was kidding."
+        #         show Akari u questioning p1 with dissolve
+        #         Akari "...So I have permission to beat him up?"
+        #         Hiroya "Amusing as it would be to watch, I'd prefer it if you didn't."
+        #         show Akari u frown p1 with dissolve
+        #         Akari "Boring!"

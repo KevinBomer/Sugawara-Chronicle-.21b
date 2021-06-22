@@ -1,13 +1,18 @@
 label Akari3:
     play music SugarMorning fadein 1
+    scene white with Dissolve(.2)
+    scene chapter_screen_1 with Dissolve(.2)
+    show logo with Dissolve(.5):
+        xalign .5
+        yalign .6
+        xpos .3
+        ypos .5
+        zoom .8
     $ renpy.pause(1, hard=True)
-    scene chapter_screen_1 with dissolve
-    $ renpy.pause(.5, hard=True)
-    show text "{size=40}Chapter 3: Something About a Club" at chaptertitlespot with easeinleft
-    $ renpy.pause(2, hard=True)
-    scene white with dissolve
+    show text "{size=40}{color=#3a47a6}Chapter Three \n{size=64}Something About a Club" at chaptertitlespot with Dissolve(1.0)
+    $ renpy.pause(3, hard=True)
     scene classroom empty
-    "I'm back in Hirayama-sensei's class. The day's been pretty uneventful thus far."
+    "I'm back in Hirayama-sensei's class. The morning's been pretty uneventful thus far."
     "It's near the end of the period and Hirayama-sensei is passing around the results from yesterday's pop quiz."
     "..."
     "I guess I can say I've had a good morning so far."
@@ -34,21 +39,23 @@ label Akari3:
     "...actually"
     "we do have a pool..."
     "..."
-    "Nah. Better not."
+    "Nah. Better not. I don't think Miyu and the swim team would appreciate that."
 
-    "Of course when I got out, my uniform was soaked. Clean, but soaked."
-    "I threw on my PE outfit instead and hung my shirt and slacks near the window to dry."
-    "So I decided to do a few laps around the track to pass the time. Hopefully my uniform would be dry enough before class."
-
+    "I finished my shower and pulled my uniform off the hooks. It's cleaner now, but soaked."
+    "I hung it near the window to try, and threw on my PE uniform instead. I decide to run a few laps while it drys."
+    "Hopefully before class starts."
     scene classroom empty with squares
-
+    "Well, that didn't work out."
     Hirayama "Tachibana-san. Your results."
     Hiroya "Yes, ma'am. Thank you, ma'am."
-    "She hands me the paper. She seems to stop at my desk for a moment and before I know it, she pokes a long, skinny finger into my shoulder."
-    "Damn."
-    Hirayama "Hey Tachibana-san, is your entire uniform slightly wet?"
+    "The teacher hands me the paper. Just as she's about too leave..."
+    play sound "sfx/toon_poke.ogg"
+    "She pauses, and pokes her finger into my shoulder."
+    "Damn. She noticed."
+    Hirayama "Hey...Tachibana..."
+    Hirayama "Your uniform is wet."
     Hiroya "Y-Yes, ma'am."
-    Hirayama "Hmm, do I want to know why?"
+    Hirayama "Do I need to know why?"
     Hiroya "Not particularly, no."
     Hiroya "...Ma'am."
     "I nod my head slightly in deferment. With a scoff, Hirayama-sensei moves to the next desk in the row."
@@ -56,7 +63,7 @@ label Akari3:
         yanchor -.1
         xflip
 
-    Akari "Eeeh?"
+    Akari "Hmm?"
     Hiroya "It's nothing!"
     hide Akari with moveoutright
 
@@ -76,7 +83,7 @@ label Akari3:
         xflip
         yanchor -.1
     "Glancing over across the desks, I get a look at Akari's face."
-    "The color is drained from her face, communicating just about everything I need to know."
+    "Her expression says everything I need to know."
     Hiroya "Hey, Akari, you doing alright over there?"
     Akari speaking "Ah-"
     Akari happy "F-fine, fine! How'd you do?"
@@ -89,7 +96,7 @@ label Akari3:
     show Akari u angry2 p5 at rightoffset with dissolve
     Akari "Curse you, Hirayama-sensei..."
     Hiroya "That's a lot of red, too. S'like a grisly murder scene happened all over your test scores."
-    Akari angry3 "Weeeh, don't remind me!"
+    Akari angry3 "Don't remind me!"
     Akari angry1 "She should really use a pencil crayon instead! It's more subtle and elegant!"
     Hiroya "I don't really think that's the issue here, Akari."
     "She pouted, puffing her cheeks out in response."
@@ -151,7 +158,7 @@ label Akari3:
     Hiroya "Yeah. You got more into it than anyone else. And the way you delivered those lines was always really fun."
     Hiroya "Compared to that Hirotada kid."
     Akari frown p2 "Oh, yeah, him! He always does this droooning monotone! I couldn't stay awake for it!"
-    Akari "And it had to be a morning class too. Yaaaawn."
+    Akari "And it had to be a morning class too. Yawn."
     Hiroya "Yeah, and the book report you delivered was super intense too."
     Akari happy p1 "Heheh! I got lucky, the teacher let me present on a {i}graphic novel{/i}. Still counts!"
     Hiroya "Yeah. Just need to find things where you can apply yourself."
@@ -169,72 +176,14 @@ label Akari3:
     #sfx bellring
     "By the time the bell rang, I was already on my way towards the door. Akari was ready as well, though she made a beeline towards the teacher's desk."
     play music Suzukitheme fadein 1
-
-    scene hallway 1
-    "I lean next to the door, staring ahead through a window overlooking the Sugawara campus."
+    play sound "sfx/door_close.ogg"
+    scene hallway 1 with squares
+    "I lean next to the door and wait for Akari. I stare out the window overlooking the Sugawara campus."
     "It's a peaceful sight. I can make out a few students tossing a frisbee back and forth. Students gathered into their usual groups for the lunch period."
     "Leaves blow over the pavement in waves. It won't be long before this whole place is covered in white."
     "For the most part, the teachers don't really care what we students do during lunch."
     "I'll usually find a bench somewhere and eat my usual vending machine bread, though the past few days have been a shakeup of that routine."
     "I'd hate to mooch off of Akari again, but it may be necessary."
-    show Suzuki u questioning p1 with moveinleft
-    Suzuki "Hey, big guy! Yo!"
-    "I guess peace has its price."
-    Hiroya "Suzuki? What're you doing out here?"
-    Suzuki shouting p2 "I was waiting {i}aaaaall{/i} morning to give you a piece'a my mind, okay?"
-    Suzuki "So just park your ass right there and let's let it all hang out!"
-    Hiroya "I mean, I wasn't going anyway. Waiting for a friend."
-    Hiroya "And I didn't really wanna fight you."
-    Suzuki questioning p1 "Eh? What's this about a fight? We were just gonna chat, mano-a-mano, yeah?"
-    Hiroya "Hey, if this is about that thing that happened yesterday, I'm sorry, I had other plans."
-    Suzuki shouting "Damn straight, you're sorry! This is important business!"
-    Hiroya "Well you guys {i}did{/i} push it on me at a moment's notice."
-    Hiroya "Hopefully you guys at least managed without me. How'd it go anyway, With the whole 'saving the school' angle?"
-    Suzuki frown "Nnnng."
-    "He looks visibly upset."
-    Hiroya "Did something happen?"
-    Suzuki shouting "Nothing happened!"
-    "Something {i}definitely{/i} happened."
-    Suzuki u tough p1 "You don't just stick your nose up when the Student Council President summons you!"
-    Suzuki u speaking "In any other circumstance I'd call that ballsy, actually."
-    Hiroya "I'm glad that I've earned your admiration and respect."
-    Suzuki u shouting p2 "D-don't take my words out of context! I'm still mad!"
-    Hiroya "If you gave me notice next time, I could help out with the stuff you and Kaori are up to, but you didn't, soooo..."
-    show Suzuki p2 at bounce
-    Suzuki "But we have to defend Sugawara's honor! Our cause is {i}noble!{/i}"
-
-    #sudden akari appearance
-    show Akari u vhappy p3 onlayer master:
-        subpixel True xpos 0.34 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
-        parallel:
-            xpos -0.26
-            ease_quad 1.0 xpos 0.3
-    show Suzuki u shouting p2 onlayer master:
-        subpixel True xpos 0.62 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
-        parallel:
-            xpos 0.5
-            ease_quad 1.0 xpos 0.7
-    Akari "Yeah! Die with honor! Live forever in glory!"
-    Suzuki p1 "Eh? What!?"
-    Hiroya "What was that? Were you quoting a samurai movie?"
-    Akari u nervous p2 "Mm? I thought that was a thing, so I wanted to join in. Did I read the conversation wrong?"
-    Suzuki questioning "Oh, is she your {i}friend{/i} that you {i}ditched{/i} me for, Hiroya??"
-    show Akari u angry1 p5 at bounce
-    Akari "Eh?"
-    Akari angry2 "The friend thief has returned!"
-    Hiroya "Eh, you're fine, Akari. We didn't really talk about anything important."
-    Akari happy p4 "Oh, okay! Hirayama-sensei recommended some extra reading I could do."
-    Hiroya "That's surprisingly helpful of her. Glad she wasn't too rough on you."
-    Suzuki shouting "H-hey, don't ignore me!"
-    Akari "Yeah, she can be pretty nice one-on-one! Okay, you ready to go?"
-    Hiroya "Sure thing. I worked up a bit of an appetite already."
-    Akari u frown p4 "Hey wait! Where's your lunch!"
-    Hiroya "Nevermind that."
-    #hide sprites
-    hide Akari with dissolve
-    hide Suzuki with dissolve
-    "Turning around, we make our way to the stairwell at the end of the hall."
-    Suzuki "Is this what it feels like to have a friend taken from you? Bummer, man..."
 
     scene hallway 2 with squares
 
@@ -251,61 +200,32 @@ label Akari3:
     Akari frown "Because they - aww."
     Hiroya "They reprint the same six jokes across all the cartons, Akari. Everyone's memorized them."
     Akari questioning "They're really funny though, right?"
-    Hiroya "Suuure."
+    Hiroya "Sure."
     hide Akari with dissolve
     "My eyes drift about, scanning the room for an empty pair of seats."
 
     #cg?
     "My eyes spot a familiar face, sitting alone towards the end of the dining area."
     Hiroya "Hey, Akari? Isn't that Yukiko over there?"
-    Akari "Hm? Oh, yeah! I almost forgot she transferred here!"
-    Hiroya "Good to know you think about your friends. She's a first year now, right?"
     Akari "Mmhm! We should go sit with her!"
-    Hiroya "Sure. It doesn't look like she's made that many friends yet..."
+    Hiroya "Sure. It doesn't look like she's made that many friends yet."
     "Navigating the aisles, we slowly make our way over to where Yukiko's seated."
     "Something's a little off about Yukiko, though. It was harder to tell from the other side of the dining hall, but getting a little closer, I could see the look on her face."
     Hiroya "What's that face she's making?"
     Akari "Mm? What face?"
     Hiroya "She's kind of staring. Intensely."
     "I point in front of her. She's paying close attention to what a group of students are talking about at a nearby table."
-    Akari "Oh, that? She must be thinking really hard about something!"
-    Hiroya "She looks like she's about to make a move to kidnap the emperor."
+    Akari "Hmm. She must be thinking really hard about something."
+    Hiroya "A consipracy maybe?"
     Akari "Eh? She couldn't get away with that, she's just a kid!"
     Hiroya "N-Nevermind."
     "Yukiko's scheming expression aside, Akari and I head over to her."
+    Akari "Heeeyyy! Yukiko!"
+    show Yukiko u curious p2 with dissolve
 
-
-    show Akari u vhappy p3 onlayer master:
-        xflip
-        subpixel True xpos 0.65 ypos 1.0 xanchor 0.5 yanchor 1.0 xzoom -1.0 rotate None
-        parallel:
-            xpos 1.22
-            linear 1.0 xpos 0.65
-    show Yukiko u curious p2 onlayer master:
-        subpixel True xpos 0.35 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
-        parallel:
-            yzoom 1
-            easein_cubic 1.0 yzoom 1.0
-        parallel:
-            xpos -0.14
-            easein_cubic 1.0 xpos 0.35
-        parallel:
-            xzoom 1
-            easein_cubic 1.0 xzoom 1.0
-        parallel:
-            xoffset 0
-            easein_cubic 1.0 xoffset 0
-    Akari "Heeeyyy! Yukikooo!"
-
-    show Yukiko u smile happy p1 onlayer master:
-        xflip
-        subpixel True xpos 0.35 ypos 1.0 xanchor 0.5 yanchor 1.0 xzoom -1.0 rotate None
-    Yukiko "Mm? Oh, hey guys!"
+    Yukiko "Mm?"
+    Yukiko smile happy p1 "Oh, hey guys!"
     Hiroya "Long time no see."
-    show Akari u confident p1:
-        xflip
-    show Yukiko u smile sweet p1:
-        xflip
     "We take our seats on opposite sides of her. Yukiko has a thermos nearby, along with a plateful of curried rice. I recognized it from dinner last night."
     "It was quite fragrant. Doubly so when Akari unpacked her own lunch - the same curried rice."
     "I should've thought to ask for a share, but it's not like I have a good way to store it anymore. Damn."
@@ -315,13 +235,14 @@ label Akari3:
     Yukiko speaking questioning "We aren't sisters, though?"
     Hiroya "Where {i}is{/i} your sister anyway? Izumi?"
     Yukiko frown p2  "Oh, she's staying home again."
-    show Akari u nervous p4 at xflip with dissolve
     "Yukiko's cheerful face turned morose. A look of mild concern flashed over Akari's face."
     Akari "She didn't come after all? Is she still in her room?"
     Yukiko speaking annoyed p1 "Where else would she be? She just spends all day in there anyway."
     Yukiko "It was me who had to check up on her! She wasn't even sick, she just wants to sleep all the time."
     Yukiko "Pale as a ghost too. She really needs to get some sunlight. Or a boyfriend."
-    Akari vhappy p3 "M-maybe she's a vampire! Like, {i}I vanna suck your blaaahd~{/i}"
+    Hiroya "Vampire."
+    show Yukiko u curious p2
+    Akari "{i}I vanna suck your blaahd~{/i}"
     Hiroya "If she had a bedsheet over her, she'd probably look more like a ghost."
     Yukiko smile happy p1 "Man, you guys really are dorks, huh?"
     Akari "Oh! I know!"
@@ -386,7 +307,7 @@ label Akari3:
                 "Well, Kaori was right that we need talent before we can go all in on that type of thing."
         "Book Club":
                 Yukiko speaking annoyed "Ehhh, maybe. Depends on the books they read."
-                Yukiko "If it's a crusty old novel about some high-bred harlot feeling sad about her dead husband, {i}yaaawn{/i}."
+                Yukiko "If it's a crusty old novel about some high-bred harlot feeling sad about her dead husband, {i}yawn{/i}."
                 Akari questioning "What kind of stuff do you like, Yukiko?"
                 Yukiko smile happy "Oh, I'm super into occult, supernatural stories lately!"
                 Yukiko "It's pretty interesting stuff, actually. There are so many different takes on the same myths and legends."
@@ -408,20 +329,22 @@ label Akari3:
     Akari happy p3 "Really? I was gonna pitch some sports clubs too."
     Yukiko frown p2 "Ehhh, physical exercise isn't my jam. Plus I hear the baseball team's a dumpster fire, so I don't wanna get anywhere near that."
     Hiroya "Oof, don't say that around Suzuki, he'd throw a fit."
-    Yukiko "Who? No, that's not important right now."
+    Yukiko "Who?"
+    Hiroya "Nobody important."
     Yukiko smile happy "The real challenge is to pick one out. Hmmm..."
-    Yukiko "Aw nuts, so many options! I can't pick just one."
+    Yukiko "So many options! I can't pick just one."
     Hiroya "If you're so conflicted, why don't you just pick one at random?"
-    Hiroya "And if you don't like it, well, you can drop it and try another. Seems pretty simple to me!"
+    Hiroya "And if you don't like it, well, you can drop it and try another. Seems pretty simple to me."
     Akari vhappy "Yeah! Except Cooking Club. When you come to Cooking Club, you're a member for life!"
     Yukiko speaking surprised "Huh. Not actually a bad idea."
-    Yukiko smile vhappy "I underestimated you, Hiroya! I thought you were the brawn-over-brains type!"
+    Yukiko smile vhappy "I underestimated you, Hiroya. I thought you were the brawn-over-brains type."
     Hiroya "What? I'm a straight-A student."
     Akari scheming "{i}Was{/i} a straight-A student."
-    Hiroya "H-hey, you don't have to bring that up in front of her!"
-    Yukiko speaking serious p1 "And you're one to talk, Akari. How many tutors did you go through over the summer?"
-    Akari nervous p2 "H-hey! I'm a good learner! I just buckle under pressure."
+    Hiroya "H-hey, you don't have to bring that up in front of her."
+    Yukiko speaking serious p1 "And you're one to talk, Akari."
+    Akari nervous p2 "H-hey! I'm a good learner. I just buckle under pressure."
     "Clearly uncomfortable with the subject, Akari quickly changes topics."
+    hide Yukiko with dissolve
     Akari questioning "Hey, Hiroya, did you bring anything to eat?"
     Hiroya "...No, I, uh, had a big breakfast. Think that's holding me over for now."
     Akari "Well, you should be snacking regularly through the day."
@@ -439,21 +362,21 @@ label Akari3:
     "I shovel a few more forkfuls into my mouth, the deluge of savory flavours mixing together to massage my palate. It was really quite good, and held up well even as leftovers."
     "Pity I couldn't enjoy it for longer."
     Hiroya "Great. So we're all meeting at the usual place?"
-    Akari questioning p2 "I got Cooking Club today! Yukiko, you {i}suuure{/i} you don't wanna check it out?"
+    Akari questioning p2 "I got Cooking Club today! Yukiko, you {i}sure{/i} you don't wanna check it out?"
     Yukiko speaking questioning p1 "Well, I already said I was going to give all the clubs a fair shake, so..."
     Yukiko smile vhappy "Alright. I'll give it a shot. Where's it usually held?"
     Akari vhappy "Room 220! I'll send you a text after class, okay?"
     Yukiko "Groovy. What'll you be up to Hiroya?"
     Hiroya "Usually I just hang out in the courtyard. Sometimes the student council lets Miyu free early and we hang out then."
     Yukiko confident "Ah, yes. Still using you as a training dummy for her fortune-telling stuff?"
-    Hiroya "She's getting better at it!"
-    Yukiko vhappy "Enjoy it while you can! Before long she'll be demanding ten thousand yen a session!"
-    Akari p1 "Eh!? Really?"
+    Hiroya "She's getting better at it."
+    Yukiko vhappy "Enjoy it while you can! Before long she'll be demanding ten thousand yen a session."
+    Akari p1 "Really?"
     Yukiko "It's what I always tell her! You gotta ask what you think your services are worth!"
-    Hiroya "I thiiink you're looking into it a bit too much. It's just a hobby."
+    Hiroya "I think you're looking into it a bit too much. It's just a hobby."
     Yukiko "An under-monetized hobby. It's okay, she'll warm up to it!"
     "After some more good-natured gabbing, we pack up our things and disperse for our afternoon classes."
-    scene classroom
+    scene classroom with dissolve
 
     "Students begin to trickle back into the classrooms for afternoon lectures. Next is math class."
     "Akari fumbles through her knapsack. I assume she's trying to find her textbook."
@@ -462,39 +385,39 @@ label Akari3:
     "Watching her squirm is incredibly distracting, so I can survive an hour without my textbook. My grades are good enough that Hojo-sensei doesn't particularly object."
     "Glancing around the room, bored and ready for class to start, I see one of my male classmates pace over to a classmate's desk. The girl had beckoned him over."
     "My mouth flattens again. This has been a recurring soap opera that much of the class room has quietly been keeping up with."
-    "The recurring saga of Touma and Aoi, two childhood best friends. Their relationship has been a hushed topic of gossip within the rest of the class."
+    "The recurring saga of Maya and Maya, two childhood best friends. Their relationship has been a hushed topic of gossip within the rest of the class."
     "Usually I opted to mind my own business, but when there was nothing else on, I listened in on the gossip and drama that filled the air."
 
-    Aoi "Hey, Touma-kun! I got a business proposition for you!"
-    Touma "Huh? What's up, do you need a study partner?"
-    Aoi "Nah, I think I'm getting the material a bit better! It's way better when you teach me! Hojo-sensei gets a little frustrated with all my questions, y'know?"
-    Touma "Heheh, no kidding."
-    "It's been a source of speculation as to what their study groups actually entail. Touma-kun has a waiting list of people asking to join."
+    Maya "Hey, Kyousuke! I got a business proposition for you!"
+    Kyousuke "Huh? What's up, do you need a study partner?"
+    Maya "Nah, I think I'm getting the material a bit better! It's way better when you teach me! Hojo-sensei gets a little frustrated with all my questions, y'know?"
+    Kyousuke "Heheh, no kidding."
+    "It's been a source of speculation as to what their study groups actually entail. Kyousuke has a waiting list of people asking to join."
     "Though at least a few of those on the list just want to be a fly on the wall for whatever happens between those two. Sheesh."
-    Aoi "The annual harvest festival's next week, did you hear?"
-    Touma "Oh, really? I guess it just slipped my mind."
-    Aoi "There's gonna be rides, and food booths, and a haunted house! They're going all out this year!"
-    Touma "A haunted house? Those are so tacky though."
-    Aoi "Eh, a little. But they're gonna be holding a curry contest too!"
-    Aoi "I heard that they're bringing back the Esophagus Exploder! It was so spicy it sent a man to the hospital, like, five years ago!"
-    Touma "That's actually pretty metal. Too bad I'm no good with spicy food."
-    Aoi "Heheh! Anyway, you free next week? We should {i}totally{/i} go!"
-    Touma "Hmm? I think I'm free. Who else is coming?"
-    Aoi "Why would I invite anyone else to our date?"
-    Touma "Right, that makes sense - wait, a what now?"
-    "Touma took a step back, turning red."
-    Aoi "Haha! You're cute when you get all flustered like that!"
-    "Aoi rested her head in her hand and crossed her legs, smirking as she did and utterly oblivious to the multitude of eyes staring at them."
-    Aoi "But no, I'm super serious, we should head over, it'll be fun!"
-    Aoi "Please come? After Debate Club on Wednesday, I'm super free to hang out!"
-    Touma "J-Just the two of us?"
-    Aoi "Mm? Did you have other plans, Touma-kun?"
-    Touma "N-no, it's just... you, and me, and we, and..."
-    Touma "I-it... it might be fun?"
-    Aoi "Ohhh, you're exciiiited! Okay, it's settled, then! I'm gonna look into it a bit more, okay?"
-    Touma "A-ah... uh... o-okay!"
-    "Touma sputtered a response as Aoi hurried back to her desk, excitedly swiping at her phone. I assume she's still doing research on the festival."
-    "Touma's jaw opened and closed by itself as he tried to process exactly what happened. A hushed silence fell over the classroom."
+    Maya "The annual harvest festival's next week, did you hear?"
+    Kyousuke "Oh, really? I guess it just slipped my mind."
+    Maya "There's gonna be rides, and food booths, and a haunted house! They're going all out this year!"
+    Kyousuke "A haunted house? Those are so tacky though."
+    Maya "Eh, a little. But they're gonna be holding a curry contest too!"
+    Maya "I heard that they're bringing back the Esophagus Exploder! It was so spicy it sent a man to the hospital, like, five years ago!"
+    Kyousuke "That's actually pretty metal. Too bad I'm no good with spicy food."
+    Maya "Heheh! Anyway, you free next week? We should {i}totally{/i} go!"
+    Kyousuke "Hmm? I think I'm free. Who else is coming?"
+    Maya "Why would I invite anyone else to our date?"
+    Kyousuke "Right, that makes sense - wait, a what now?"
+    "Kyousuke took a step back, turning red."
+    Maya "Haha! You're cute when you get all flustered like that!"
+    "Maya rested her head in her hand and crossed her legs, smirking as she did and utterly oblivious to the multitude of eyes staring at them."
+    Maya "But no, I'm super serious, we should head over, it'll be fun!"
+    Maya "Please come? After Debate Club on Wednesday, I'm super free to hang out!"
+    Kyousuke "J-Just the two of us?"
+    Maya "Mm? Did you have other plans, Kyousuke?"
+    Kyousuke "N-no, it's just... you, and me, and we, and..."
+    Kyousuke "I-it... it might be fun?"
+    Maya "Oh, you're excited! Okay, it's settled, then! I'm gonna look into it a bit more, okay?"
+    Kyousuke "A-ah... uh... o-okay!"
+    "Kyousuke sputtered a response as Maya hurried back to her desk, excitedly swiping at her phone. I assume she's still doing research on the festival."
+    "Kyousuke's jaw opened and closed by itself as he tried to process exactly what happened. A hushed silence fell over the classroom."
     "He slumps over onto his desk. One could only imagine what he was thinking right now."
     Suzuki "How does a guy like {i}that{/i} seduce a girl like {i}that{/i} without even trying...?"
     Hiroya "Eh?"
@@ -622,7 +545,7 @@ label Akari3:
     Hojo "Well, with that out of the way, we can return to our lessons. Today we'll be learning about quadratic parabolas."
     "Our afternoon classes go on relatively normally. Hojo-sensei begins his lecture."
     Hojo "You can see how the graphs curve elegantly across the chart. Perfectly, uniformly. Mm, exquisite."
-    Akari "Wow! Hojo-sensei is really into curves!"
+    Suzuki "Wow, this guy's really into curves, eh Hiroya?"
     Hiroya "..."
 
     #timeskip
@@ -639,7 +562,7 @@ label Akari3:
     #sfx buzz
     "My phone vibrates in my pocket. I got a text message."
     "I take a look at it. It's from Miyu..."
-    Hiroya "'Can't make it. This meeting's going late. I'll catch up with you guys tomorrow.'"
+    Miyu "'Can't make it. This meeting's going late. I'll catch up with you guys tomorrow.'"
     Hiroya "Well, that sucks."
     "With a sigh, I pocket my phone. If Suzuki was any indication, Kaori is probably plotting something."
     "I heard some of the war stories from Miyu, but she's always spoken about her in a respectful tone. Miyu isn't one to raise her voice in general, though."
@@ -657,7 +580,7 @@ label Akari3:
     #we should do something with izumi stuff during the nap but idk what
     #Mono's got you covered
 
-    Yukiko "Heeey! Hiroyaaa!"
+    Yukiko "Hey! Hiroya!"
     Hiroya "Ngh... huh?"
     show Yukiko u curious p2 behind black
     show black onlayer master:
@@ -705,7 +628,7 @@ label Akari3:
     Yukiko upset "It's not that, it's just that..."
     Yukiko "It's hard, like, I'm not sporty enough for the sports clubs, and I'm not nerdy enough for the nerdy clubs..."
     Hiroya "Did you take up Akari on her offer to check out Cooking Club?"
-    Yukiko "Ohhh."
+    Yukiko u curious p2 "Ohhh."
     Hiroya "'Ohhh'?"
     Yukiko speaking serious "The less said about what happened in Cooking Club today, the better."
     Hiroya "Where's Akari, anyway? She's later than usual..."
@@ -720,30 +643,22 @@ label Akari3:
     Hiroya "Your own club? Isn't there like, a whole approval process?"
     Yukiko speaking questioning "Yeah, about that. I was reading over my student handbook. Right here, see?"
     "As if ready for this conversation, she held her book aloft, presenting it before me."
-    Yukiko "I did some reading up on the whole approval process. Turns out you need to talk to Student Council about it, buuut..."
+    Yukiko "I did some reading up on the whole approval process. Turns out you need to talk to Student Council about it, but..."
     Yukiko "They're {i}super{/i} laissez-faire about this stuff. So long as it has 'significant student interest', you got carte blanche to do whatever~"
     Hiroya "Well, you still need, like, approval, right? The president's a tough one to crack."
-    Yukiko "Yeaaah, that's the sucky part. You also need a teacher supervisor, so I gotta rub someone's back there."
+    Yukiko "Yeah, that's the sucky part. You also need a teacher supervisor, so I gotta rub someone's back there."
     Yukiko "But I think I could get away with something! It's all about persuasion."
     "Damn. Yukiko could be quite conniving when she wants to be."
     Hiroya "You sure you wanna start an all-new club? Sounds like a lot of work."
     Yukiko smile vhappy "It'll be great! C'mon, Hiroya, back me up!"
-    show Yukiko u smile vhappy p1 onlayer master:
-        subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
-        parallel:
-            xpos 0.5
-            linear 1.0 xpos 0.35
-        parallel:
-            xzoom 1
-            linear 1.0 xzoom -1.0
-    show Akari u vhappy p3 onlayer master:
+    show Akari u vhappy p3:
         subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 xzoom -1.0 rotate None
         parallel:
             xpos 1.21
-            linear 1.0 xpos 0.65
+            linear 1.0 xpos 0.7
     Akari "Yeah, Hiroya! You gotta support your friends!"
     Hiroya "Wha- Akari!? When did you get here?"
-    Akari "Just now! Sorry it took so long, I was cleaning and sterilizing the kitchen."
+    Akari questioning "Just now! Sorry it took so long, I was cleaning and sterilizing the kitchen."
     Hiroya "Oh, right, the incident. Uhh, are you okay? Can you walk?"
     Yukiko smile attitude p2 "She's fiiiine. Don't make such a big deal out of it."
     Akari happy p2 "Yeah! I mean, I went cross-eyed for about fifteen minutes, but after that I was hunky-dory!"
@@ -769,30 +684,29 @@ label Akari3:
     Yukiko speaking questioning "What? Aren't you going to tell us-"
     Akari p1 "It'll be okay! Miyu will have our backs! But we gotta run for it!"
     hide Akari with easeoutright
-    show Yukiko u speaking questioning p1 onlayer master:
-        subpixel True xpos 0.35 ypos 1.0 xanchor 0.5 yanchor 1.0 xzoom -1.0 rotate None
+    show Yukiko u speaking questioning p1:
         parallel:
-            xpos 0.35
-            linear 1.0 xpos 0.5
+            ease 1.0 xpos 0.5
     Hiroya "I doubt they're open to pitches while they're holding a meeting."
     "Akari was already sprinting off towards the school building. Yukiko gave me a quizzical look."
     Yukiko "You have any idea what she's thinking?"
     Hiroya "I don't know if even Akari knows what she's thinking. C'mon, I'll show you where the student council meets."
+    hide Yukiko with dissolve
     "Picking up the pace to a jog, we make our way over with godspeed-"
     Yukiko surprised "Hah, hah... slow dooown... I'm running outta breath..."
     Hiroya "What? Already?"
     Yukiko "I told you, I'm not... sporty enough... I don't like running."
     "-Or as quickly as reasonably feasible."
-
-
     #Mono start here
-    scene student council
-    "When we arrived, the door to the student council room was already open. Akari must've beaten us there."
+    scene student council with squares
+    play sound "sfx/door_open.ogg"
+    "When we arrived, Akari was already inside."
+    "Stirring up trouble by the looks of it."
     show Akari u speaking p4 onlayer master:
         subpixel True xpos 0.65 ypos 1.0 xanchor 0.5 yanchor 1.0 xzoom -1.0 rotate None
         parallel:
-            xpos -0.26
-            linear 1.0 xpos 0.7
+            xpos 1.25
+            easein 1.0 xpos 0.7
     Akari "If you just give me a second-"
     Kaori "That doesn't excuse the fact that you're-"
     "She sees us at the door."
@@ -846,63 +760,51 @@ label Akari3:
             xpos -0.23
             linear 1.0 xpos 0.15
     Miyu "Kaori, while I empathize with your frustration, our mandate was to give the student body a voice."
-    Kaori "It's not about giving the student body a voice, it's that we're having an important meeting and that there's a policy for making appointments."
+    Kaori u frustrated p2 "It's not about giving the student body a voice, it's that we're having an important meeting and that there's a policy for making appointments."
     Miyu "I think we should hear them out. It's not like we can't postpone this meeting, and if I may say so, I'm in need of a break."
     Kaori glaring "I guess a break might indeed be in order."
     Kaori "Alright. Five minutes. Five minutes is all I can spare to indulge you. C'mon, let's hear it."
     Yukiko smile vhappy "Thanks Miyu! You're a total badass!"
     Miyu u nervous "I - o-okay."
-    show Yukiko u smile vhappy p1 onlayer master:
-        subpixel True xpos 0.65 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
-        parallel:
-            xpos 0.65
-            linear 1.0 xpos 0.5
-    show Akari u confident p1 onlayer master:
-        subpixel True xpos 0.85 ypos 1.0 xanchor 0.5 yanchor 1.0 xzoom -1.0 rotate None
-        parallel:
-            xpos 0.85
-            linear 1.0 xpos 0.75
-    show Kaori u glaring p1 onlayer master:
-        subpixel True xpos 0.35 ypos 1.0 xanchor 0.5 yanchor 1.0 xzoom -1.0 rotate None
-        parallel:
-            xpos 0.35
-            linear 1.0 xpos 0.25
-    show Miyu u speaking onlayer master:
-        subpixel True xpos 0.15 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
-        parallel:
-            xpos 0.15
-            linear 1.0 xpos -0.16
+    hide Miyu
+    hide Yukiko
+    hide Akari
+    hide Kaori
+    with dissolve
     "Miyu lowered herself back into her seat. All eyes were on Yukiko, Akari, and myself."
     hide Miyu
     Hiroya "So, uh... Akari? You wanted to lead?"
-    Akari p3 "Yep! So here's my pitch."
-    Akari "I'd like to bring to Sugawara..."
+    show Akari u happy p2 at left with dissolve
+    Akari "Yep! So here's my pitch."
+    Akari u sad p4 "I'd like to bring to Sugawara..."
     "Akari pauses for dramatic effect."
-    Akari "...the Manga Club!"
+    Akari u confident p4 "...the Manga Club!"
     "I had forgotten how open she is with her interests."
     Yukiko speaking questioning "What."
+    show Kaori u shocked p2 with dissolve
     Kaori shocked "A Manga Club? Why would we need a-"
     Miyu "K-Kaori, let her talk. She - she might be going somewhere with this."
     show Kaori u frustrated p1 with dissolve
     "With a heavy sigh, Kaori folded her arms, patiently waiting to hear the rest. Miyu sure has a way with this girl."
-    Akari "Manga is a medium that doesn't get enough recognition. These day, kids sit around watching anime, with no regard for the source material!"
+    Akari u speaking p4 "Manga is a medium that doesn't get enough recognition. These day, kids sit around watching anime, with no regard for the source material!"
     Hiroya "Not everything is based on a manga."
-    Akari vhappy "Silence in the peanut gallery!"
+    Akari u angry1 p5 "Silence in the peanut gallery!"
     Kaori speaking "Don't we already have an Anime Club? This sounds like an Anime Club."
     Akari angry2 p5 "You take that back! Anime and manga are completely different forms of storytelling, and to lump them together would be like... like... lumping together panda bears and red pandas!"
     Hiroya "Akari, don't get too worked up."
-    Akari angry1 p6 "I'm not worked up, you're worked up!"
+    Akari angry3 p6 "I'm not worked up, you're worked up!"
     Akari "Students of Sugawara deserve a place to gather and discuss their favorite manga!"
     Miyu "Th-that sounds nice and everything, but-"
     Juichi "But what's the point, exactly? Are you suggesting an expansion upon the Anime Club to include manga?"
-    Akari "Did I say Anime and Manga Club? No! I said Manga Club!"
+    Akari angry2 p5"Did I say Anime and Manga Club? No! I said Manga Club!"
     Akari "Juichi! I know you'd appreciate this. I saw you reading that Magical Girl Nanako during lunch-"
     Juichi "Hey, keep quiet about that! It, um, was a friend's."
     Kaori glaring "..."
     Juichi "Anyway, as Kaori has said, we're in the middle of a meeting."
-    Akari "Also! I brought this man, who wants to make a statement on the heated subject of manga!"
+    Akari u confident p2"Also! I brought this man, who wants to make a statement on the heated subject of manga!"
     Hiroya "Wha- I didn't agree to anything like-"
-    Akari "So, Hiroya! What is your take on the embattled landscape of manga?"
+    Akari u scheming p4 "So, Hiroya! What is your take on the embattled landscape of manga?"
+    show Kaori cool with dissolve
     "Oh no, she's putting me on the spot. What do I say?"
     menu:
         "I support it.":
@@ -935,48 +837,60 @@ label Akari3:
             Juichi "...Chihiro, could you, uh, strike that from the record?"
             #sfx keyboard typing
             "A bespectacled girl off to the side clacked away at her keyboard in response to his request. Hoo boy."
-
+    hide Akari with dissolve
     Kaori cool "Tch. This is {i}ridiculous{/i}, I'm not approving this-"
-    Yukiko speaking serious "You can't do that!"
+    Yukiko "You can't do that!"
+    play sound "sfx/punch.ogg"
+    play music SchoolCasual fadein (2)
+    with vpunch
+
     "With a forceful slam, Yukiko spread the student handbook across the table, its impact echoing in the cramped room."
     Kaori shout "What!? What are you even-"
+    hide Kaori
+    show Yukiko u speaking annoyed p1
+    with dissolve
     Yukiko "Chapter 15, Article 11.4, Line 4."
     Yukiko "If a club has demonstrably sufficient student interest and has adhered to the application process, it is the student council's duty to authorize it as an official club with access to school funding."
-    Yukiko "It's in the rules! You can't just say no just because you don't like the idea! Because that's called fascism!"
+    Yukiko speaking serious "It's in the rules. You can't just say no just because you don't like the idea. Because that's called fascism."
     Juichi "She's exaggerating a bit, but the documentation is fairly clear on the matter."
     Kaori concerned "Ugh, Juichi, you cockroach, don't take {i}their{/i} side. Miyu, you agree this is insanity, right?"
     Miyu "I-I don't have an opinion, I just work here..."
     Kaori "Ugh."
     "Kaori glanced at Yukiko with a look of annoyance, before lowering her head. She looked defeated."
     Kaori embarrassed "...And do you have your forms and your signatures?"
-    Yukiko speaking surprised "...Aaaah, still working on that."
+    stop music
+    Yukiko speaking surprised "...Ah, still working on that."
     Kaori frustrated "...Of course you don't. Joy."
     Kaori cool "I don't have time for this. Miyu! You have their form?"
     Miyu "R-right here!"
     "Miyu slid a blank form over, smiling triumphantly as she did."
+    hide Yukiko
+    show Kaori u frustrated p2
+    with dissolve
     Kaori "Fill this out, get your eight stupid signatures, and we'll..."
     Kaori embarrassed "...I'll sign off on your stupid comic club-thing."
-    Akari vhappy "Yaaay! Thank you, Kaori! You're the best president ever!"
-    Kaori "W-Well, I try."
-    Kaori happy "I mean, yes, of course. The best there ever was. Now buzz off, we have important matters to discuss."
+    Akari vhappy "Yay! Thank you, Kaori! You're the best president ever!"
+    Kaori p1 "W-Well, I try."
+    Kaori happy "I mean, yes, of course. The best there ever was."
+
+    Kaori glaring p1 "Now buzz off, we have important matters to discuss."
     "The three of us nodded and gave an appreciative bow before ducking back out into the hallway."
     hide Kaori with dissolve
     hide Akari with dissolve
     hide Yukiko with dissolve
-    Kaori "And close the door behind them!"
-    #sfx door slam
+    Kaori "And close the door!"
     Kaori "..."
-    Kaori "Alright, let's review our plan of attack against Sakura no Ki."
+    Kaori "Alright, back to Shizuka-"
     Miyu "Kaori... you {i}really{/i} have to let this go..."
-
-    scene hallway 1 empty with dissolve
+    play sound "sfx/door_close.ogg"
+    scene hallway 2 empty with squares
 
     show Yukiko u smile vhappy p1 at rightoffset with dissolve
     Yukiko "Holy crap guys, we did it!"
     show Akari u vhappy p1 at leftoffset with dissolve
     Akari "Yukiko, you were amazing! The way you stared her down with the rulebook! It was chilling!"
     Yukiko "Not as good as your impassioned speech! Thanks to you, we reached their hearts AND their minds!"
-    Akari "Omigosh, you really think so? Really?"
+    Akari "You really think so? Really?"
     Yukiko speaking questioning "Well, probably not... they looked confused more than anything, I was just trying to be supportive."
     Akari questioning "Oh, well, huh."
     Akari happy "Well it was really fun! I'm glad you guys are supporting me too!"
@@ -990,71 +904,112 @@ label Akari3:
     Yukiko "She's a total pushover, I'm sure it'll be fiiine."
     Akari "What about your sister?"
     Hiroya "Can she sign if she's never come to school?"
-    Yukiko "Izumi is technically a student at Sugawara."
+    Yukiko u smile eyesclosed p2 "Sure. Izumi is technically a student at Sugawara."
     Akari "Oh, really? I hope she gets well soon, it'd be nice if she hung out with us."
     Yukiko "I'll take this form home with me tonight, see if I can get her to do something. For once."
     Akari "W-Well, if she does, we're over halfway there right?"
-    Hiroya "Things are looking up. You guys wanna head back now?"
-    Yukiko vhappy "Yeah. If you spend too much time at school people start calling you a nerd. I don't need that to be what people think of when they think 'transfer student.'"
-    Akari confident "Too bad Miyu can't come with us... but I guess we'll see her tomorrow!"
-    Hiroya "Alright, let's go."
     hide Akari with dissolve
     hide Yukiko with dissolve
-    "We agreed to meet up in the courtyard again after gathering our stuff at our lockers."
-
-    scene street day with dissolve
-
-    "Before long, we were back on the streets. Yukiko's eyes were drifting from side to side."
-    "Vendors, eateries, and retail outlets flanked the street on both sides. She had a hungry look in her eye."
-    show Yukiko u speaking questioning p1 at rightoffset with dissolve
-    Yukiko "Man, I haven't been out here before. There're sooo many people out here! A lot of them seem to be heading to Drifter's Grill."
-    Hiroya "It gets busy at this time of day. I have heard some good stuff about Drifter's Grill, though."
+    scene hallway 2 empty with squares
+    "We go downstairs to our lockers and prepare to leave for the day."
+    Hiroya "You guys have any plans after school?"
     Yukiko smile vhappy "We should get a bite to eat right now! I could go for a steak."
     show Akari u speaking p2 at leftoffset with dissolve
     Akari "Yukiko, we have leftovers. And they're still good!"
-    Yukiko upset "But steaaak..."
+    Yukiko upset "But steak..."
     Hiroya "I'm voting for the rice. Steak is expensive."
     Yukiko pout "Aw, okay. I guess I'm outnumbered."
-    Hiroya "So you guys are gonna mooch some signatures off friends and family?"
-    Akari vhappy p1 "Yep, that's the plan."
-    Yukiko speaking questioning "We've got Miyu and maybe Izumi, but beyond that, it'll take some convincing."
-    Yukiko smile happy "Well, I suppose we can deal with that tomorrow."
-    Yukiko "Anyway, Hiroya, thanks for your help. Are you coming to Akari's too?"
-    Akari "We got huge heapings of curry rice leftover! We gotta finish it off!"
+    hide Akari
+    hide Yukiko
+    with dissolve
+    #SFX Locker open
+    "As I open my locker, I notice something unusual inside."
+    "An envelope, sealed with a heart sticker, is sitting on top of the pile."
+    "{i}A love letter?!{/i}"
+    "I open it carefully, and remove the note inside."
+    "'{color=ffcccc}Hey, The thing is I think you're pretty great. And I'd like to go out with you. I'll be waiting by the fountain after school.'"
+    "{i}Whats with this unexpected development?{/i}"
+    Akari questioning p2 "Aren't you coming Hiroya?"
     Hiroya "Actually, uh..."
-    "I have to check up on my camp under the bridge, but I can't let the girls know. Gotta think of something quick."
     Hiroya "It's getting a little late, and I have a thing with the folks. Sorry, I can't stay for food."
-    Akari questioning p2 "Huh. You never turn down food."
+    "I try to hide the letter before Akari sees it."
+    Akari questioning p2 "Huh? You never turn down food."
     Akari nervous "Is it that bad?"
     Hiroya "Huh? N-no, I just have something to do, that's all."
-    "I try to cover up my reaction to Akari's piercing question. She looks back with a look of mild concern, before Yukiko intervenes."
-    Yukiko vhappy "Hey, the big guy has places to be. We'll see him tomorrow, alright?"
-    Yukiko "And by then we'll have this thing aaaaall filled out! It'll be a hella cool surprise!"
+    "I try to cover up my reaction to Akari's piercing question. She looks back with a look of mild concern."
+    "Yukiko catches a glimpse of the note as I try to put it away."
+    show Yukiko u smile attitude p2
+    Yukiko "Hey, the big guy has places to be. We'll see him tomorrow, alright?"
+    Yukiko smile confident "Come on Akari. Let's get this thing all filled out! It'll be a hella cool to show Hiroya and Miyu tomorrow!"
     Akari happy "Yeah, you're right. See you around, Hiroya!"
     Hiroya "Later."
-    hide Akari with dissolve
-    hide Yukiko with dissolve
-    "The other two turned a corner and split off from me."
-    Hiroya "I'm sorry, Akari."
-    "Muttering to myself, I keep going the way I was going. Going the scenic route was the best way to get to the bridge, and to throw them off my scent in the process."
+    hide Akari
+    hide Yukiko
+    with dissolve
+    "Nice save, Yukiko."
+    "I'll have to thank her for that later."
+    "I stuff the note in my pocket and head for the courtyard."
+    scene black with fade
+    jump Kaori2
 
-    scene bridge below day with dissolve
-    "Before too long, I made it to the bridge. I hid most of my stuff in the bushes apart from the concrete."
-    "To my great relief, they were still there. Lucky, too. I often hear of shady folk passing through here, and they'd be easy pickings for someone desperate."
-    "...This is far from an ideal living situation, but without income I'm stuck with it."
-    "I rise up to my feet, quickly shuffling back over to the main roads. I don't want to arouse suspicion while it's still bright out."
-
-    scene street day with dissolve
-    "I try and keep my rounds around town casual. Don't want to expend too much energy."
-    "I don't know how much longer I can keep up this charade. Someone's eventually going to notice me sleeping under the bridge."
-    "And if they don't catch that, well... I might get caught showering at school. Need to figure out something for that."
-    "They have bathhouses, but those are mostly for old people and families. If they saw some kid in a Sugawara uniform mulling about, it'd raise questions."
-    "That doesn't account for issues like getting food. I really don't want to start picking out of the trash; I don't care how good that steak is."
-    "I could try farming along the bridge, but that'd probably raise more suspicion. Scratch that."
-    "I just don't want the girls to find out. If they found out, they'd call me ridiculous for what I did. For running out on my old man."
-    "Well, I'm basically an adult now. I can handle this. I've handled it well enough so far. Just need to figure out a plan."
-    "A realistic plan. One without scavenging for leftovers and garbage."
-    "I can risk the bathhouses though. Bathhouses are honestly pretty alright."
-    "I make my paces around the block, stopping here and there to get a feel for my surroundings. Making a mental list of the resources available to me."
-
-    jump interstitial
+    ######### Deprecated - This scene is no longer necessary. Saved for future reference.
+        #
+        #
+        # show Suzuki u questioning p1 with moveinleft
+        # Suzuki "Hey, big guy! Yo!"
+        # "I guess peace has its price."
+        # Hiroya "Suzuki? What're you doing out here?"
+        # Suzuki shouting p2 "I was waiting {i}aaaaall{/i} morning to give you a piece'a my mind, okay?"
+        # Suzuki "So just park your ass right there and let's let it all hang out!"
+        # Hiroya "I mean, I wasn't going anyway. Waiting for a friend."
+        # Hiroya "And I didn't really wanna fight you."
+        # Suzuki questioning p1 "Eh? What's this about a fight? We were just gonna chat, mano-a-mano, yeah?"
+        # Hiroya "Hey, if this is about that thing that happened yesterday, I'm sorry, I had other plans."
+        # Suzuki shouting "Damn straight, you're sorry! This is important business!"
+        # Hiroya "Well you guys {i}did{/i} push it on me at a moment's notice."
+        # Hiroya "Hopefully you guys at least managed without me. How'd it go anyway, With the whole 'saving the school' angle?"
+        # Suzuki frown "Nnnng."
+        # "He looks visibly upset."
+        # Hiroya "Did something happen?"
+        # Suzuki shouting "Nothing happened!"
+        # "Something {i}definitely{/i} happened."
+        # Suzuki u tough p1 "You don't just stick your nose up when the Student Council President summons you!"
+        # Suzuki u speaking "In any other circumstance I'd call that ballsy, actually."
+        # Hiroya "I'm glad that I've earned your admiration and respect."
+        # Suzuki u shouting p2 "D-don't take my words out of context! I'm still mad!"
+        # Hiroya "If you gave me notice next time, I could help out with the stuff you and Kaori are up to, but you didn't, soooo..."
+        # show Suzuki p2 at bounce
+        # Suzuki "But we have to defend Sugawara's honor! Our cause is {i}noble!{/i}"
+        #
+        # #sudden akari appearance
+        # show Akari u vhappy p3 onlayer master:
+        #     subpixel True xpos 0.34 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
+        #     parallel:
+        #         xpos -0.26
+        #         ease_quad 1.0 xpos 0.3
+        # show Suzuki u shouting p2 onlayer master:
+        #     subpixel True xpos 0.62 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
+        #     parallel:
+        #         xpos 0.5
+        #         ease_quad 1.0 xpos 0.7
+        # Akari "Yeah! Die with honor! Live forever in glory!"
+        # Suzuki p1 "Eh? What!?"
+        # Hiroya "What was that? Were you quoting a samurai movie?"
+        # Akari u nervous p2 "Mm? I thought that was a thing, so I wanted to join in. Did I read the conversation wrong?"
+        # Suzuki questioning "Oh, is she your {i}friend{/i} that you {i}ditched{/i} me for, Hiroya??"
+        # show Akari u angry1 p5 at bounce
+        # Akari "Eh?"
+        # Akari angry2 "The friend thief has returned!"
+        # Hiroya "Eh, you're fine, Akari. We didn't really talk about anything important."
+        # Akari happy p4 "Oh, okay! Hirayama-sensei recommended some extra reading I could do."
+        # Hiroya "That's surprisingly helpful of her. Glad she wasn't too rough on you."
+        # Suzuki shouting "H-hey, don't ignore me!"
+        # Akari "Yeah, she can be pretty nice one-on-one! Okay, you ready to go?"
+        # Hiroya "Sure thing. I worked up a bit of an appetite already."
+        # Akari u frown p4 "Hey wait! Where's your lunch!"
+        # Hiroya "Nevermind that."
+        # #hide sprites
+        # hide Akari with dissolve
+        # hide Suzuki with dissolve
+        # "Turning around, we make our way to the stairwell at the end of the hall."
+        # Suzuki "Is this what it feels like to have a friend taken from you? Bummer, man..."
